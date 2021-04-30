@@ -1,17 +1,19 @@
 # Recipe search application
 ## Project description
-The program should allow the user to enter a list of foods that are currently in stock at home.
+The program should allow the user to enter a list of foods into an entry widget, that are currently in stock at home.
 
-Then the application should output a corresponding recipe selection based on this list.
+Based on this search query, the application should then output a recipe selection based on the available ingredients as a formatted list in an extra window.
 
+The user can then click on a recipe in this extra window, whereupon the corresponding recipe opens in a new window.
 
 ## Features in scope of this project
 ### Must-haves
 * Already 10-20 included recipes
 * Reading of recipe data from a (JSON) file
 * Simple GUI with Tkinter
-    * Input field or search bar for the food keys
-    * Output field for the listed recipe suggestions or indication that no recipe is available for it
+    * Input field or entry widget for the food keys
+    * Output field in an extra window for the listed recipe suggestions or indication that no recipe is available for it
+    * Linking within the output list to the corresponding recipe
 
 ### Nice-to-have
 * Bilingual program selection (German and English)
