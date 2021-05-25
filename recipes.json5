@@ -1,0 +1,324 @@
+// Recipe database with all ready-made recipes, which are readable for the application
+{
+    "recipes": [
+        // recipe number 1
+        {
+         "id": 1,
+         "name": "Gemüsepaste (Maggi-Ersatz)",
+         "portion": "3 große Gläser",
+         "ingredient": [{ // begin of ingredients
+             "name": "Sellerie",
+             "amount": "1 Knolle"
+         },
+         {
+            "name": "Möhren",
+            "amount": "3 Stück" 
+         },
+         {
+            "name": "Lauch",
+            "amount": "2 Stangen"
+         },
+         {
+            "name": "Zwiebel",
+            "amount": "1 Stück"
+         },
+         {
+            "name": "Knoblauch",
+            "amount": "3 Zehen"
+         },
+         {
+            "name": "Petersilie",
+            "amount": "1/2 Bund"
+         },
+         {
+            "name": "Liebstöckel",
+            "amount": "1/2 Bund"
+         },
+         {
+            "name": "Meersalz",
+            "amount": ""
+         },
+         {
+            "name": "Gläser, ausgekocht",
+            "amount": "3 - 4 Stück"
+         }], // end of ingredients
+         "difficulty": "Leicht",
+         "preparation": "Das Gemüse putzen und in kleine Würfel schneiden, die Kräuter waschen und ebenfalls klein schneiden.\
+Alles miteinander fein pürieren.\
+Das Pürierte nun abwiegen und das Gewicht durch 6 teilen.\
+Diese Menge dann an Salz hinzugeben, durchmengen, ziehen lassen und in die Gläser verteilen.\
+Nun die Gläser gut verschließen und in den Kühlschrank stellen.\
+Diese Gemüsemischung hält sich bis zu 10 Monate und bildet die pefekte Grundlage zum würzen von Suppen und Soßen.",
+         "tip": "Das Salz konserviert das Gemüse und macht es haltbarer.\
+Die benötigte Menge zum würzen von Soßen und Suppen muss ausprobiert werden, ein Richtwert ist 2 Teelöffel auf 250 ml Wasser",
+        },
+        // recipe number 2
+        {
+         "id": 2,
+         "name": "Sommer-Kartoffelsalat",
+         "portion": "4 Personen",
+         "ingredient": [{ // begin of ingredients
+             "name": "Kartoffeln",
+             "amount": "600 g"
+         },
+         {
+            "name": "Gurke",
+            "amount": "3/4 Stück" 
+         },
+         {
+            "name": "Zwiebel",
+            "amount": "1 Stück"
+         },
+         {
+            "name": "Sonnenblumenöl",
+            "amount": "3 EL"
+         },
+         {
+            "name": "Mayonnaise",
+            "amount": "3 EL"
+         },
+         {
+            "name": "Knoor Salatkrönung Dill Kräuter",
+            "amount": "1 Packung"
+         },
+         {
+            "name": "Salz und Pfeffer",
+            "amount": ""
+         }], // end of ingredients
+         "difficulty": "Leicht",
+         "preparation": "Die Kartoffeln mit Schale waschen und ca. 20 Minuten weich kochen, dann abgießen, pellen und abkühlen lassen.\
+Die Gurke waschen, schälen und mit einer Reibe in dünne Scheiben hobeln.\
+Die Zwiebel putzen und in feine Würfel schneiden.\
+Die Kartoffeln in Scheiben schneiden und mit den Gurkenscheieben und den Zwiebelwürfeln in eine Schüssel geben.\
+Knorr Salatkrönung mit den Sonnenblumenöl und 3 EL Wasser verrühren.\
+Nun mit den Kartoffeln vermengen.\
+Zu guter Schluss noch die Mayonnaise unterheben und mit Salz und Pfeffer abschmecken.\
+Guten Appetit!",
+         "tip": "-",
+        },
+        // recipe number 3
+        {
+         "id": 3,
+         "name": "Kartoffelsuppe",
+         "portion": "4 Personen",
+         "ingredient": [{ // begin of ingredients
+             "name": "Kartoffeln",
+             "amount": "~6 Stück"
+         },
+         {
+            "name": "Suppengrün",
+            "amount": "1 Bund" 
+         },
+         {
+            "name": "Zwiebel",
+            "amount": "1 Stück"
+         },
+         {
+            "name": "Speck",
+            "amount": "30 g"
+         },
+         {
+            "name": "Gemüsepaste",
+            "amount": "2 - 3 TL"
+         },
+         {
+            "name": "Petersilie",
+            "amount": "2 EL"
+         },
+         {
+            "name": "Piment",
+            "amount": "1 TL"
+         },
+         {
+            "name": "Lorbeerblätter",
+            "amount": "3 - 4 Stück"
+         },
+         {
+            "name": "Salz und Pfeffer",
+            "amount": ""
+         }], // end of ingredients
+         "difficulty": "Leicht",
+         "preparation": "Die Kartoffeln und das Suppengrün putzen.\
+Das Suppengrün in kleine Würfel und die Kartoffeln in etwas größeren Würfel schneiden.\
+Alles in einen Topf geben, mit 1 Liter Wasser aufgießen, Gemüsepaste, Piment und Lorbeerblätter zugeben und zum kochen bringen.\
+Speck fein würfeln und in einer Pfanne auslassen.\
+Die Zwiebeln putzen und ebenfalls fein gewürfelt zum Speck geben und mit anschwitzen.\
+Anschließend den Speck und die Zwiebel mit in die Suppe geben.\
+Nach ca. 20 Minuten, wenn alles gar ist, die Suppe mit dem Pürierstab bis zur gewünschten Konsistenz pürieren.\
+Eventuell mit Salz und Pfeffer nach würzen.\
+Hinzu kommen am Ende die Petersilie und wenn gewünscht weitere beliebige Kräuter.\
+Guten Appetit!",
+         "tip": "-",
+        },
+        // recipe number 4
+        {
+         "id": 4,
+         "name": "Regenbogennudeln",
+         "portion": "4 Personen",
+         "ingredient": [{ // begin of ingredients
+             "name": "Nudeln",
+             "specification": "Linguine",
+             "amount": "400 g"
+         },
+         {
+            "name": "Paprika",
+            "amount": "1 Stück" 
+         },
+         {
+            "name": "Zucchini",
+            "amount": "1 Stück"
+         },
+         {
+            "name": "Rotkohl",
+            "amount": "5 Blätter"
+         },
+         {
+            "name": "Möhren",
+            "amount": "1 - 2 Stück"
+         },
+         {
+            "name": "Erdnussbutter",
+            "amount": "2 EL"
+         },
+         {
+            "name": "Sojasauce",
+            "amount": "2,5 EL"
+         },
+         {
+            "name": "Paprikapulver",
+            "amount": "1/2 TL"
+         },
+         {
+            "name": "Knoblauch",
+            "amount": "1 Zehe"
+         },
+         {
+            "name": "Kokosöl",
+            "amount": "2 EL"
+         },
+         {
+            "name": "Honig oder Agavendicksaft",
+            "amount": "4 TL"
+         },
+         {
+            "name": "Sesam",
+            "amount": "2 - 3 EL"
+         },
+         {
+            "name": "Salz und Pfeffer",
+            "amount": ""
+         }], // end of ingredients
+         "difficulty": "Mittel",
+         "preparation": "Die Gemüsesorten putzen, waschen und in feine längliche Streifen schneiden beziehungsweise mit einem Sparschäler Streifen abschneiden.\
+Parallel dazu können die Nudeln kochen.\
+In eine kleine Schüssel die Erdnusscreme, Sojasauce, Honig oder Agavendicksaft und das Paprikapulver geben und den Knoblauch hineinreiben oder pressen.\
+Alles gut vermengen, damit daraus eine Art Soße entstehen kann.\
+In einer großen Pfanne das Kokosöl erhitzen und das Gemüse darin anbraten.\
+In dieser Zeit kann auch der Sesam in einer anderen Pfanne ohne Fett angeröstet werden.\
+Die Nudeln abtropfen und mit der Soße zum Gemüse geben und verrühren, würzen und auf die Teller verteilen.\
+Den Sesam kann man nun nach belieben über die Nudeln streuen.\
+Guten Appetit!",
+         "tip": "-",
+        },
+        // recipe number 5
+        {
+         "id": 5,
+         "name": "Gefüllte Cannelloni",
+         "portion": "4 Personen",
+         "ingredient": [{ // begin of ingredients
+             "name": "Nudeln",
+             "specification": "Cannelloni",
+             "amount": "400 g"
+         },
+         {
+            "name": "Zwiebel",
+            "amount": "1 Stück" 
+         },
+         {
+            "name": "Zucchini",
+            "amount": "1 Stück"
+         },
+         {
+            "name": "Möhren",
+            "amount": "1 Stück"
+         },
+         {
+            "name": "Paprika",
+            "amount": "1 Stück"
+         },
+         {
+            "name": "Knoblauch",
+            "amount": "2 Zehen"
+         },
+         {
+            "name": "Tomaten",
+            "amount": "1 Dose"
+         },
+         {
+            "name": "Tomatensuppe",
+            "amount": "1 Dose"
+         },
+         {
+            "name": "Tomatenmark",
+            "amount": "2 EL"
+         },
+         {
+            "name": "Schmand",
+            "amount": "2 Becher"
+         },
+         {
+            "name": "geriebener Käse",
+            "amount": "150 g"
+         },
+         {
+            "name": "Kräuter",
+            "amount": "3 EL"
+         },
+         {
+            "name": "Schinken",
+            "amount": "200 g"
+         },
+         {
+            "name": "Butter",
+            "amount": "2 EL"
+         },
+         {
+            "name": "Zucker",
+            "amount": "2 EL"
+         },
+         {
+            "name": "Paprikapulver",
+            "amount": "2 EL"
+         },
+         {
+            "name": "geriebener Parmesan",
+            "amount": "100 g"
+         },
+         {
+            "name": "Oliveröl",
+            "amount": "etwas"
+         },
+         {
+            "name": "Salz und Pfeffer",
+            "amount": ""
+         }], // end of ingredients
+         "difficulty": "Zeitaufwendig",
+         "preparation": "Die Butter in einem Topf bräunen und den Zucker darin karamellisieren lassen.\
+Nun die Dose Tomaten, die Tomatensuppe und 1 EL Paprikapulver hinzufügen und bei niedriger Temperatur köcheln lassen.\
+Das Gemüse putzen, waschen und zusammen mit den Schinken in kleine Würfel schneiden.\
+Das Olivenöl in einer hohen Pfanne heiß werden lassen.\
+Das Gemüse darin scharf anbraten, den Schinken, das restliche Paprikapulver und das Tomatenmark zugeben und noch kurz mitbraten.\
+Den Ofen auf 160°C Umluft vorheizen.\
+In der Zeit die Cannellonie-Füllung etwas abkühlen lassen.\
+Dann das Gemüse in eine Schüssel geben und zusammen mit Schmand, geriebenen Käse und den Kräutern (nach belieben) gut vermischen.\
+Nun können die Cannellonie befüllt und in eine Auflaufform gelegt werden.\
+Die Tomatensoße über die Cannellonie gießen, mit Parmesan bestreuen und im Backofen etwas 30 Minuten überbacken.\
+Guten Appetit!",
+         "tip": "Die Cannellonie können mit diversen Methoden befüllt werden.\
+Entweder man füllt die Füllung in einen Gefrierbeutel und schneidet eine Ecke davon ab, sodass der Inhalt in die Cannellonie gepresst werden kann oder\
+man befüllt diese mithilfe von zwei Löffeln (1 TL und 1 EL).\
+Auf den EL kommt die Füllung für eine Cannellonie und der TL schiebt den Inhalt vorsichtig in die Cannellonie herein.",
+        }
+    // end of "recipes"
+    ] 
+} // end of database 
