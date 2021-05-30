@@ -78,10 +78,6 @@ Die benötigte Menge zum würzen von Soßen und Suppen muss ausprobiert werden, 
             "amount": "3 EL"
          },
          {
-            "name": "Knoor Salatkrönung Dill Kräuter",
-            "amount": "1 Packung"
-         },
-         {
             "name": "Salz und Pfeffer",
             "amount": ""
          }], // end of ingredients
@@ -295,7 +291,7 @@ Guten Appetit!",
             "amount": "100 g"
          },
          {
-            "name": "Oliveröl",
+            "name": "Olivenöl",
             "amount": "etwas"
          },
          {
