@@ -71,6 +71,9 @@ class RecipesDatabase:
 
 db = RecipesDatabase()
 db.read_json()
-tmp = db.search_recipes_by_ingredients("nudeln")
+tmp = db.search_recipes_by_ingredients("Nudeln")
 for recipe in tmp:
-    print(f"Id {recipe.id}: {recipe.name}")
+    #print(f"Id {recipe.id}: {recipe.name}")
+    #print(f"Id {recipe.id}: {recipe.name} -> Schwierigkeit: {recipe.difficulty}")
+    #print(f"Id {recipe.id}: {recipe.name}, Zubereitung: {recipe.preparation}")
+    #print(recipe)

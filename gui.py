@@ -1,5 +1,7 @@
 import tkinter as tk
 import tkinter.font as tkFont
+from tkinter import messagebox
+import time 
 
 class App:
     root: tk.Tk
@@ -27,18 +29,18 @@ class App:
         label_banner["fg"] = "#333333"
         label_banner["justify"] = "center"
         label_banner["text"] = ""
-        label_banner.place(x=0,y=0,width=599,height=30)
+        label_banner.place(x=0,y=0,width=599,height=30)   
 
 
         #Label with the Author within the Label for the DHBW Logo
         label_author=tk.Label(self.root)
-        ft = tkFont.Font(family='Times',size=9)
+        ft = tkFont.Font(family='Times',size=10)
         label_author["bg"] = "#e2001a"
         label_author["font"] = ft
         label_author["fg"] = "#ffffff"
         label_author["justify"] = "center"
         label_author["text"] = "Erstellt von: Jennifer L. Krüger"
-        label_author.place(x=450,y=0,width=147,height=30)
+        label_author.place(x=400,y=0,width=200,height=30)
 
 
         #Label for the main header
@@ -126,26 +128,33 @@ class App:
     def button_allrecipes_command(self):
         """ The method outputs a message within the command line 
             indicating that it was executed successfully"""
-        print("Es wurden alle Rezepte erfolgreich angezeigt.")
+        print('Es wurden alle Rezepte erfolgreich angezeigt.')
 
 
     def button_close_command(self):
         """ The method outputs a message within the command line 
             indicating that it was executed successfully"""
-        self.root.destroy()
-        print("Die Anwendung wurde geschlossen.")
+        question_box = messagebox.askquestion('Schließen der Anwendung', 'Möchten Sie die Anwendung wirklich schließen?', icon='error')
+        if question_box == 'yes':
+            self.root.destroy()
+            print('Die Anwendung wurde geschlossen.')
+        else:
+            tk.messagebox.showinfo('Willkommen zurück', 'Willkommen zurück in der Anwendung.')
+            print('Die Anwendung wurde wiederhergestellt.')
         
-
+        
     def button_help_command(self):
         """ The method outputs a message within the command line 
             indicating that it was executed successfully"""
-        print("Die Hilfeseite wurde aufgerufen.")
+        messagebox.showinfo('Hilfe', 'Geben Sie ein beliebiges Lebensmittel in das Suchfeld ein und es werden Ihnen entsprechende Rezepte mit dem Lebensmittel ausgegeben.\n\nViel Spaß.')
+        print('Die Hilfeseite wurde aufgerufen.')
 
 
     def button_reset_command(self):
         """ The method outputs a message within the command line 
             indicating that it was executed successfully"""
-        print("Die Lebensmitteleingabe wurde erfolgreich zurückgesetzt.")
+        print('Die Lebensmitteleingabe wurde erfolgreich zurückgesetzt.')
+#End Class App
 
 if __name__ == "__main__":
     root = tk.Tk()
