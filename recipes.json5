@@ -1,12 +1,12 @@
-// Recipe database with all ready-made recipes, which are readable for the application
+//Recipe database with all ready-made recipes, which are readable for the application
 {
     "recipes": [
-        // recipe number 1
+        //recipe number 1
         {
          "id": 1,
          "name": "Gemüsepaste (Maggi-Ersatz)",
          "portion": "3 große Gläser",
-         "ingredient": [{ // begin of ingredients
+         "ingredient": [{ //begin of ingredients
              "name": "Sellerie",
              "amount": "1 Knolle"
          },
@@ -41,7 +41,7 @@
          {
             "name": "Gläser, ausgekocht",
             "amount": "3 - 4 Stück"
-         }], // end of ingredients
+         }], //end of ingredients
          "difficulty": "Leicht",
          "preparation": "Zu aller Erst das Gemüse putzen und in kleine Würfel schneiden, die Kräuter waschen und ebenfalls klein schneiden.\
 Danach soll alles miteinander fein püriert werden.\
@@ -52,12 +52,12 @@ Diese Gemüsemischung hält sich bis zu 10 Monate und bildet die pefekte Grundla
          "tip": "Das Salz konserviert das Gemüse und macht es haltbarer.\
 Die benötigte Menge zum würzen von Soßen und Suppen muss ausprobiert werden, ein Richtwert ist 2 Teelöffel auf 250 ml Wasser",
         },
-        // recipe number 2
+        //recipe number 2
         {
          "id": 2,
          "name": "Sommer-Kartoffelsalat",
          "portion": "4 Personen",
-         "ingredient": [{ // begin of ingredients
+         "ingredient": [{ //begin of ingredients
              "name": "Kartoffeln",
              "amount": "600 g"
          },
@@ -80,7 +80,7 @@ Die benötigte Menge zum würzen von Soßen und Suppen muss ausprobiert werden, 
          {
             "name": "Salz und Pfeffer",
             "amount": ""
-         }], // end of ingredients
+         }], //end of ingredients
          "difficulty": "Leicht",
          "preparation": "Die Kartoffeln mit Schale waschen und ca. 20 Minuten weich kochen, dann abgießen, pellen und abkühlen lassen.\
 Die Gurke kann während der Kochzeit der Kartoffeln gewaschen, geschält und mit einer Reibe in dünne Scheiben gehobelt werden.\
@@ -92,12 +92,12 @@ Zu guter Schluss noch den kartoffelsalat mit Salz und Pfeffer abschmecken.\
 Guten Appetit!",
          "tip": "-",
         },
-        // recipe number 3
+        //recipe number 3
         {
          "id": 3,
          "name": "Kartoffelsuppe",
          "portion": "4 Personen",
-         "ingredient": [{ // begin of ingredients
+         "ingredient": [{ //begin of ingredients
              "name": "Kartoffeln",
              "amount": "~6 Stück"
          },
@@ -132,7 +132,7 @@ Guten Appetit!",
          {
             "name": "Salz und Pfeffer",
             "amount": ""
-         }], // end of ingredients
+         }], //end of ingredients
          "difficulty": "Leicht",
          "preparation": "Als erstes sollen die Kartoffeln und das Suppengrün geputzt werden.\
 Das Suppengrün dann in kleine Würfel und die Kartoffeln in etwas größeren Würfel schneiden.\
@@ -146,12 +146,12 @@ Hinzu kommen am Ende die Petersilie und wenn gewünscht weitere beliebige Kräut
 Guten Appetit!",
          "tip": "-",
         },
-        // recipe number 4
+        //recipe number 4
         {
          "id": 4,
          "name": "Regenbogennudeln",
          "portion": "4 Personen",
-         "ingredient": [{ // begin of ingredients
+         "ingredient": [{ //begin of ingredients
              "name": "Nudeln",
              "specification": "Linguine",
              "amount": "400 g"
@@ -203,7 +203,7 @@ Guten Appetit!",
          {
             "name": "Salz und Pfeffer",
             "amount": ""
-         }], // end of ingredients
+         }], //end of ingredients
          "difficulty": "Mittel",
          "preparation": "Die Gemüsesorten als erstes putzen, waschen und in feine längliche Streifen schneiden beziehungsweise mit einem Sparschäler Streifen abschneiden.\
 Parallel dazu können die Nudeln kochen.\
@@ -216,12 +216,12 @@ Den Sesam kann man nun nach belieben über die Nudeln streuen.\
 Guten Appetit!",
          "tip": "-",
         },
-        // recipe number 5
+        //recipe number 5
         {
          "id": 5,
          "name": "Gefüllte Cannelloni",
          "portion": "4 Personen",
-         "ingredient": [{ // begin of ingredients
+         "ingredient": [{ //begin of ingredients
              "name": "Nudeln",
              "specification": "Cannelloni",
              "amount": "400 g"
@@ -297,7 +297,7 @@ Guten Appetit!",
          {
             "name": "Salz und Pfeffer",
             "amount": ""
-         }], // end of ingredients
+         }], //end of ingredients
          "difficulty": "Zeitaufwendig",
          "preparation": "Die Butter in einem Topf bräunen und den Zucker darin karamellisieren lassen.\
 Nun die Dose Tomaten, die Tomatensuppe und 1 EL Paprikapulver hinzufügen und bei niedriger Temperatur köcheln lassen.\
@@ -315,12 +315,12 @@ Entweder man füllt die Füllung in einen Gefrierbeutel und schneidet eine Ecke 
 man befüllt diese mithilfe von zwei Löffeln (1 TL und 1 EL).\
 Auf den EL kommt die Füllung für eine Cannellonie und der TL schiebt den Inhalt vorsichtig in die Cannellonie herein.",
         },
-        // recipe number 6
+        //recipe number 6
         {
          "id": 6,
          "name": "Gemüseschmarrn",
          "portion": "2 Personen",
-         "ingredient": [{ // begin of ingredients
+         "ingredient": [{ //begin of ingredients
              "name": "Zwiebel",
              "amount": "1 Stück"
          },
@@ -363,7 +363,7 @@ Auf den EL kommt die Füllung für eine Cannellonie und der TL schiebt den Inhal
          {
             "name": "Salz und Pfeffer",
             "amount": ""
-         }], // end of ingredients
+         }], //end of ingredients
          "difficulty": "Leicht",
          "preparation": "Die Zwiebel putzen, fein würfeln und in etwas Olivenöl anbraten.\
 Die Champignos ebenfalls putzen und in Scheiben schneiden.\
@@ -380,12 +380,12 @@ Zum Schluss werden die 4 Stücke nochmals geteilt, bis diese in Mungerechten St�
 Guten Appetit!",
          "tip": "Dazu passt wunderbar ein Knoblauch-Dip und ein Salat.",
         },
-        // recipe number 7
+        //recipe number 7
         {
          "id": 7,
          "name": "Spargel in Parmesancrêps",
          "portion": "6 Portionen",
-         "ingredient": [{ // begin of ingredients
+         "ingredient": [{ //begin of ingredients
              "name": "Spargel",
              "amount": "500 g"
          },
@@ -412,7 +412,7 @@ Guten Appetit!",
          {
             "name": "Salz",
             "amount": ""
-         }], // end of ingredients
+         }], //end of ingredients
          "difficulty": "Leicht",
          "preparation": "Den Spargel waschen un das untere Drittel schälen.\
 Danach den gesamten Spargel in kochendes Salzwasser ca. 10 Minuten garen lassen, abgießen und zum Schluss abschrecken.\
@@ -423,12 +423,12 @@ Ganz zum Schluss muss nur noch ein paar Stangen Spargel in jeden Crêps eingerol
 Guten Appetit!",
          "tip": "Dazu passt wunderbar ein Kräuterquark.",
         },
-        // recipe number 8
+        //recipe number 8
         {
          "id": 8,
          "name": "Warmer Tortellini-Salat",
          "portion": "4 Personen",
-         "ingredient": [{ // begin of ingredients
+         "ingredient": [{ //begin of ingredients
              "name": "Nudeln",
              "specification": "Tortellini",
              "amount": "750 g"
@@ -468,7 +468,7 @@ Guten Appetit!",
          {
             "name": "Salz und Pfeffer",
             "amount": ""
-         }], // end of ingredients
+         }], //end of ingredients
          "difficulty": "Mittel",
          "preparation": "Den Brokkoli zuallererst putzen und dann in kleine Röschen teilen, sodass diese im kochenden Wasser ca. 5 - 7 Minuten bissfest gekocht werden.\
 Die Paprika, den Schinken und die Frühlingszwiebel putzen und in kleine Würfel, bzw. Ringe schneiden.\
@@ -479,12 +479,12 @@ Nach belieben kann man das Ganze nun noch würzen mit Salz, Pfeffer und diversen
 Guten Appetit!",
          "tip": "Statt den Weinessig kann man auch hellen Balsamicoessig verwenden.",
         },
-         // recipe number 9
+         //recipe number 9
         {
          "id": 9,
          "name": "Couscous-Salat",
          "portion": "4 Portionen",
-         "ingredient": [{ // begin of ingredients
+         "ingredient": [{ //begin of ingredients
              "name": "Couscous",
              "amount": "250 g"
          },
@@ -497,6 +497,10 @@ Guten Appetit!",
             "amount": "1 Stück"
          },
          {
+            "name": "Paprika",
+            "amount": "1/2 Stück"
+         },
+         {
             "name": "Olivenöl",
             "amount": "3 EL"
          },
@@ -505,35 +509,145 @@ Guten Appetit!",
             "amount": "1 Stück"
          },
          {
-            "name": "Brokkoli",
-            "amount": "500 g"
+            "name": "Zwiebel",
+            "amount": "1 Stück"
          },
          {
-            "name": "Mayonnaise",
-            "amount": "150 g"
-         },
-         {
-            "name": "Joghurt",
-            "amount": "200 g"
-         },
-         {
-            "name": "Weinessig",
-            "amount": "4 EL"
+            "name": "Petersilie",
+            "amount": ""
          },
          {
             "name": "Salz und Pfeffer",
             "amount": ""
-         }], // end of ingredients
+         }], //end of ingredients
          "difficulty": "Mittel",
-         "preparation": "Den Brokkoli zuallererst putzen und dann in kleine Röschen teilen, sodass diese im kochenden Wasser ca. 5 - 7 Minuten bissfest gekocht werden.\
-Die Paprika, den Schinken und die Frühlingszwiebel putzen und in kleine Würfel, bzw. Ringe schneiden.\
-Danach in einer großen Schlüssel die Brokkoli-Röschen, die Paprika, die Frühlingszwiebeln, den Mais, sowie den Schinken vermischen.\
-Die Mayonnaise, den Joghurt und den Essig kann man bereits als ein Dressing herstellen und mit den restlichen Zutaten vermengen.\
-Zu guter Schluss werden die Tortellini nach Packungsanweisung zubereitet und noch warm zu den Salat gegeben.\
-Nach belieben kann man das Ganze nun noch würzen mit Salz, Pfeffer und diversen Kräutern.\
+         "preparation": "In einen kleinen Topf ca. 250 ml Wasser zum Kochen bringen.\
+Sobald das Wasser kochet, den Topf vom Herd nehmen und direkt den Couscous einrühren.\
+Dies kann nun zur Seite gestellt werden, damit der Couscous mindesten 5 Minuten quellen kann.\
+Nun die Gurke, Tomate, Zwiebel, sowie die Paprika putzen, schälen und in kleine Würfel schneiden, um dies anschließend zu vermischen.\
+Das ganze mit etwas Salz würzen.\
+Die Zitrone nun auspressen und den daraus gewonnenen Zitronensaft mit 2 EL Olivenöl, sowie Salz und Pfeffer zu einen Dressing verrühren.\
+Der letzte EL Olivenöl wird mit dem augequollenen Couscous mittels einer Gabel vermengt, damit dieser nicht klebt und die Körner schön locker bleiben.\
+Zum Schluss alles kräftig miteinander durchmengen und die Petersilie darüber streuen.\
 Guten Appetit!",
-         "tip": "Statt den Weinessig kann man auch hellen Balsamicoessig verwenden.",
+         "tip": "Dieser Salat passt gut als Beilage zu gegrilltem und gebratenem Fleisch.",
         },
-    // end of "recipes"
+         //recipe number 10
+        {
+         "id": 10,
+         "name": "Möhren-Ingwer-Kokos-Schaumsüppchen",
+         "portion": "3 Portionen",
+         "ingredient": [{ //begin of ingredients
+             "name": "Möhren",
+             "amount": "4 Stück"
+         },
+         {
+            "name": "Ingwer",
+            "amount": "1 Stück" 
+         },
+         {
+            "name": "Kokosmilch",
+            "amount": "1 Dose"
+         },
+         {
+            "name": "Butter",
+            "amount": "3 TL"
+         },
+         {
+            "name": "Zucker",
+            "amount": "3 TL"
+         },
+         {
+            "name": "Gemüsepaste",
+            "amount": "1 - 2 TL"
+         }], //end of ingredients
+         "difficulty": "Leicht",
+         "preparation": "Die Möhren und den Ingwer schälen, sowie in kleine und feine Würfel schneiden.\
+Die Butter in einem Topf schmelzen und nach einer leichten bräune den Zucker zugeben zum karamellisieren.\
+Nun alle anderen Zutaten hinzugeben und solange köcheln lassen, bis die Möhren weich sind.\
+Anschließend alles mit einen (Stab-)Mixer gut durchmixen.
+Guten Appetit!",
+         "tip": "Dazu schmecken auf Zitronengras gespießte kleine Bouletten oder gebratene Hänchenbrustfilets.\
+Verfeinern kann man die Suppe zusätzlich mit kleingeschnittener Petersilie oder Schnittlauch.",
+        },
+         //recipe number 11
+        {
+         "id": 11,
+         "name": "China-Nudel-Pfanne",
+         "portion": "3 Portionen",
+         "ingredient": [{ //begin of ingredients
+             "name": "Nudeln",
+             "specification": "Wok - Nudeln",
+             "amount": "1 Tüte"
+         },
+         {
+            "name": "Brokkoli",
+            "amount": "1 Stück" 
+         },
+         {
+            "name": "1 Paprika",
+            "amount": "1 Stück"
+         },
+         {
+            "name": "Zucchini",
+            "amount": "1 Stück"
+         },
+         {
+            "name": "Möhren",
+            "amount": "2 Stück"
+         },
+         {
+            "name": "Lauchzwiebeln",
+            "amount": "3 Stück"
+         },
+         {
+            "name": "Kokosmilch",
+            "amount": "1 Dose"
+         },
+         {
+            "name": "Gemüsepaste",
+            "amount": "1 TL"
+         },
+         {
+            "name": "Hühnerbrustfilet",
+            "amount": "200 g"
+         },
+         {
+            "name": "Zitronengras",
+            "amount": "3 Stangen"
+         },
+         {
+            "name": "Cashewkerne",
+            "amount": "5 EL"
+         },
+         {
+            "name": "Currypaste",
+            "amount": "5 - 6 TL"
+         },
+         {
+            "name": "Sojasoße",
+            "amount": "3 - 4 EL"
+         },
+         {
+            "name": "Sesamöl",
+            "amount": "3 - 4 EL"
+         },
+         {
+            "name": "Salz und Pfeffer",
+            "amount": ""
+         }], //end of ingredients
+         "difficulty": "Zeitaufwendig",
+         "preparation": "Die Cashewkerne in zwei Längshälften teilen und in einer Pfanne ohne Fett anrösten und beiseite stellen.\
+Das gesamte Gemüse waschen und in dünne Streifen schneiden, ggf. muss dieses nochmals geteilt werden.\
+Jedoch den Brokkoli in kleine Röschen teilen.\
+Nun das Hühnerbrustfilet in mundgerechte Stücke schneiden und mit Sesamöl in einen Wok oder einer hohen Pfanne mit dem gesamten Gemüse anbraten.\
+Anschließend das Zitronengras, die Kokosmilch, 150 ml Wasser und die Gemüsepaste hinzufügen und mit den Wok-Nudeln kurz umrühren und bei geschlossenem Deckel dünsten.\
+Nach ca. 10 Minuten kann mit der Currypaste, der Sojasoße und diversen beliebigen Gewürzen abgeschmeckt werden.\
+Nach weiteren 3 - 5 Minuten können zum Schluss die gerösteten Cashewkerne hinzugefügt werden für den kleinen Crunch.\
+Guten Appetit!",
+         "tip": "Mit dem Gemüse kann je nach Geschmack varriert werden, die Gesamtmenge sollte lediglich bei 750 g liegen.\
+Auch das Hühnerbrustfilet kann weggelassen oder durch Fisch oder Shrimps ersetzt werden.",
+        }
+    //end of "recipes"
     ] 
-} // end of database 
+} //end of database 
