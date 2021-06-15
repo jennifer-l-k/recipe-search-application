@@ -146,8 +146,9 @@ class App:
     def button_help_command(self):
         """ The method outputs a message within the command line 
             indicating that it was executed successfully"""
-        messagebox.showinfo('Hilfe', 'Geben Sie ein beliebiges Lebensmittel in das Suchfeld ein und es werden Ihnen entsprechende Rezepte mit dem Lebensmittel ausgegeben.\n\nViel Spaß.')
         print('Die Hilfeseite wurde aufgerufen.')
+        messagebox.showinfo('Hilfe', 'Geben Sie ein beliebiges Lebensmittel in das Suchfeld ein und es werden Ihnen entsprechende Rezepte mit dem Lebensmittel ausgegeben.\n\nViel Spaß.')
+        print('Die Hilfeseite wurde geschlossen.')
 
 
     def button_reset_command(self):
