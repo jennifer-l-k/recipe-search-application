@@ -8,14 +8,17 @@ The user can then click on a recipe in this extra window, whereupon the correspo
 
 ## Features in scope of this project
 ### Must-haves
-* Already 10-20 included recipes
-* Reading of recipe data from a (JSON) file
+* Already 10-20 included recipes ✔️
+* Reading of recipe data from a (JSON) file ✔️
+* Output field in the terminal for the listed recipe suggestions ✔️
 * Simple GUI with Tkinter
-    * Input field or entry widget for the food keys
+    * Input field or entry widget for the food keys ✔️
     * Output field in an extra window for the listed recipe suggestions or indication that no recipe is available for it
     * Linking within the output list to the corresponding recipe
 
 ### Nice-to-have
+* Implementation of a help button with a small introduction ✔️
+* Implementation of an exit button with security query ✔️
 * Bilingual program selection (German and English)
 * All recipes can be listed with the help of an extra button or with a special command in the input field
 * Food that is available in the household is displayed in green, otherwise in red
