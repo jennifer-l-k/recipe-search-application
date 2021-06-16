@@ -9,7 +9,7 @@ with open('./recipes.json5', encoding='utf-8') as file:
 
 @dataclass  # Methode __init__() zur Erzeugung von Objekten wird eingespart
 class Ingredient:  # Aufteilung der Zutaten
-    """ ... """
+    """More precise breakdown of the individual ingredient structures."""
     name: str
     specification: str
     amount: str
@@ -17,7 +17,7 @@ class Ingredient:  # Aufteilung der Zutaten
 
 @dataclass
 class Recipe:  # Wiedergabe des Rezepts
-    """" ... """
+    """Container class or template for the entire recipe structure."""
     id: int
     name: str
     portion: str
@@ -29,7 +29,8 @@ class Recipe:  # Wiedergabe des Rezepts
 
 @dataclass
 class RecipesDatabase:
-    """ ... """
+    """Reading in the recipe database with processing of the data in various functions.
+    These are divided into the function "read_json" and "search_recipes_by_ingredients."""
     all_recipes_dict: dict = dataclasses.field(
         default_factory = dict) 
     ingredient_dict: dict = dataclasses.field(
@@ -37,7 +38,8 @@ class RecipesDatabase:
 
 
     def read_json(self):
-        """ ... """
+        """Read in the recipes from the database "recipes.json5". 
+        The corresponding data is then assigned to Dictonarsys."""
         for recipe in data["recipes"]:
             new_recipe = Recipe(id=recipe["id"],
                                 name=recipe["name"],
@@ -61,7 +63,7 @@ class RecipesDatabase:
 
     
     def search_recipes_by_ingredients(self,ingredient):
-        """ ... """
+        """Search function for a food key within the recipe database."""
         recipes = []
         tmp = self.ingredient_dict[ingredient.casefold()]
         for recipe_id in tmp:
@@ -73,7 +75,7 @@ db = RecipesDatabase()
 db.read_json()
 tmp = db.search_recipes_by_ingredients("Nudeln")
 for recipe in tmp:
-    #print(f"Id {recipe.id}: {recipe.name}")
+    print(f"Id {recipe.id}: {recipe.name}")
     #print(f"Id {recipe.id}: {recipe.name} -> Schwierigkeit: {recipe.difficulty}")
     #print(f"Id {recipe.id}: {recipe.name}, Zubereitung: {recipe.preparation}")
-    #print(recipe)
+    #print(f"Id {recipe.id}: {recipe.name}, Zutaten: {recipe.ingredients}")
