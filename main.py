@@ -71,17 +71,16 @@ class RecipesDatabase:
 
 
     def show_recipes_by_id(self, recipe_id):
-        """ ... """
-        print(self.all_recipes_dict[recipe_id])
-        return
+        """Search function for an id key within the recipe database."""
+        return self.all_recipes_dict[recipe_id]
 
 
 db = RecipesDatabase()
 db.read_json()
-tmp = db.search_recipes_by_ingredients("Möhren")
+tmp = db.search_recipes_by_ingredients("Nudeln")
 for recipe in tmp:
     print(f"Id {recipe.id}: {recipe.name}")
     #print(f"Id {recipe.id}: {recipe.name} -> Schwierigkeit: {recipe.difficulty}")
     #print(f"Id {recipe.id}: {recipe.name}\n Zubereitung: {recipe.preparation}")
     #print(f"Id {recipe.id}: {recipe.name}\n Zutaten: {recipe.ingredients}")
-#tmp = print(db.show_recipes_by_id(6))
+#print(db.show_recipes_by_id(6))
