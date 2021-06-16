@@ -585,7 +585,7 @@ Verfeinern kann man die Suppe zusätzlich mit kleingeschnittener Petersilie oder
             "amount": "1 Stück" 
          },
          {
-            "name": "1 Paprika",
+            "name": "Paprika",
             "amount": "1 Stück"
          },
          {
@@ -647,6 +647,70 @@ Nach weiteren 3 - 5 Minuten können zum Schluss die gerösteten Cashewkerne hinz
 Guten Appetit!",
          "tip": "Mit dem Gemüse kann je nach Geschmack varriert werden, die Gesamtmenge sollte lediglich bei 750 g liegen.\
 Auch das Hühnerbrustfilet kann weggelassen oder durch Fisch oder Shrimps ersetzt werden.",
+        }
+        //recipe number 12
+        {
+         "id": 12,
+         "name": "Gemüse - Curry",
+         "portion": "4 Portionen",
+         "ingredient": [{ //begin of ingredients
+             "name": "Reis",
+             "amount": "300 - 400 g"
+         },
+         {
+            "name": "Brokkoli",
+            "amount": "-" 
+         },
+         {
+            "name": "Blumenkohl",
+            "amount": "-"
+         },
+         {
+            "name": "Möhren",
+            "amount": "-"
+         },
+         {
+            "name": "Zwiebel",
+            "amount": "1 Stück"
+         },
+         {
+            "name": "Bananen",
+            "amount": "2 Stück"
+         },
+         {
+            "name": "Knoblauchzehen",
+            "amount": "2 Stück"
+         },
+         {
+            "name": "Weißwein",
+            "amount": "125 ml"
+         },
+         {
+            "name": "Joghurt",
+            "amount": "500 g"
+         },
+         {
+            "name": "Petersilie",
+            "amount": "1 Bund"
+         },
+         {
+            "name": "Currypulver",
+            "amount": "3 EL"
+         },
+         {
+            "name": "Salz und Pfeffer",
+            "amount": ""
+         }], //end of ingredients
+         "difficulty": "Leicht",
+         "preparation": "Das TK Gemüse auftauen lassen und währenddessen den Reis schonmal nach Packungsanleitung zubereiten.\
+Die Zwiebel und die Knoblauchzehen putzen und in feinen wurfel schneiden, damit diese in etwas Öl glasig angebraten werden können.\
+Die Bananen zerdrücken und hinzugeben.\
+Nun das Currypuler mit untermischen und alles kurz anschwitzen, bevor das Gemüse hinzugefügt wird.\
+Das Ganze dann mit den Weißwein ablöschen und ca. 10 Minuten dünsten lassen, andernfalls etwas länger überziehen, falls das Gemüse noch etwas gefroren ist.\
+Nun den Joghurt mit unterrühren und alles zusammen mit Salz und Pfeffer abschmecken.\
+Zum guten Schluss nochmals alles ca. 10 Minuten köcheln lassen, bevor das Gemüse-Curry mit Reis und gehackter Petersilie serviert wird.\
+Guten Appetit!",
+         "tip": "Das Gemüse ist gemischt als Tiefkühl Gemüse erhältlich und sollte mindestens 1 kg sein.",
         }
     //end of "recipes"
     ] 
