@@ -1,4 +1,3 @@
-# JSON5 Format für die Möglichkeit der Formatierungsänderung (Kommentare, Absätze, etc.)
 import pyjson5 as json
 from dataclasses import dataclass
 import dataclasses
@@ -7,8 +6,8 @@ with open('./recipes.json5', encoding='utf-8') as file:
     data = json.load(file)
 
 
-@dataclass  # Methode __init__() zur Erzeugung von Objekten wird eingespart
-class Ingredient:  # Aufteilung der Zutaten
+@dataclass  #Methode __init__() zur Erzeugung von Objekten wird eingespart
+class Ingredient:  #Aufteilung der Zutaten
     """More precise breakdown of the individual ingredient structures."""
     name: str
     specification: str
@@ -16,7 +15,7 @@ class Ingredient:  # Aufteilung der Zutaten
 
 
 @dataclass
-class Recipe:  # Wiedergabe des Rezepts
+class Recipe:
     """Container class or template for the entire recipe structure."""
     id: int
     name: str
@@ -25,7 +24,7 @@ class Recipe:  # Wiedergabe des Rezepts
     preparation: str
     tip: str
     ingredients: list[Ingredient] = dataclasses.field(
-        default_factory=list)  # Ausgabe der Zutaten in einer Liste
+        default_factory=list)
 
 @dataclass
 class RecipesDatabase:
@@ -59,7 +58,7 @@ class RecipesDatabase:
                     current_recipes = []
                 current_recipes.append(new_recipe.id)
                 self.ingredient_dict[new_ingredient.name.casefold()] = current_recipes
-            self.all_recipes_dict[new_recipe.id] = new_recipe  # Dictonary nach ID
+            self.all_recipes_dict[new_recipe.id] = new_recipe  #Dictonary nach ID
 
     
     def search_recipes_by_ingredients(self,ingredient):
@@ -71,11 +70,18 @@ class RecipesDatabase:
         return recipes
 
 
+    def show_recipes_by_id(self, recipe_id):
+        """ ... """
+        print(self.all_recipes_dict[recipe_id])
+        return
+
+
 db = RecipesDatabase()
 db.read_json()
-tmp = db.search_recipes_by_ingredients("Nudeln")
+tmp = db.search_recipes_by_ingredients("Möhren")
 for recipe in tmp:
     print(f"Id {recipe.id}: {recipe.name}")
     #print(f"Id {recipe.id}: {recipe.name} -> Schwierigkeit: {recipe.difficulty}")
-    #print(f"Id {recipe.id}: {recipe.name}, Zubereitung: {recipe.preparation}")
-    #print(f"Id {recipe.id}: {recipe.name}, Zutaten: {recipe.ingredients}")
+    #print(f"Id {recipe.id}: {recipe.name}\n Zubereitung: {recipe.preparation}")
+    #print(f"Id {recipe.id}: {recipe.name}\n Zutaten: {recipe.ingredients}")
+#tmp = print(db.show_recipes_by_id(6))
