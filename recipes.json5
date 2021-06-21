@@ -36,7 +36,7 @@
          },
          {
             "name": "Meersalz",
-            "amount": ""
+            "amount": " "
          },
          {
             "name": "Gläser, ausgekocht",
@@ -79,7 +79,7 @@ Die benötigte Menge zum würzen von Soßen und Suppen muss ausprobiert werden, 
          },
          {
             "name": "Salz und Pfeffer",
-            "amount": ""
+            "amount": " " 
          }], //end of ingredients
          "difficulty": "Leicht",
          "preparation": "Die Kartoffeln mit Schale waschen und ca. 20 Minuten weich kochen, dann abgießen, pellen und abkühlen lassen.\
@@ -131,7 +131,7 @@ Guten Appetit!",
          },
          {
             "name": "Salz und Pfeffer",
-            "amount": ""
+            "amount": " "
          }], //end of ingredients
          "difficulty": "Leicht",
          "preparation": "Als erstes sollen die Kartoffeln und das Suppengrün geputzt werden.\
@@ -202,7 +202,7 @@ Guten Appetit!",
          },
          {
             "name": "Salz und Pfeffer",
-            "amount": ""
+            "amount": " "
          }], //end of ingredients
          "difficulty": "Mittel",
          "preparation": "Die Gemüsesorten als erstes putzen, waschen und in feine längliche Streifen schneiden beziehungsweise mit einem Sparschäler Streifen abschneiden.\
@@ -296,7 +296,7 @@ Guten Appetit!",
          },
          {
             "name": "Salz und Pfeffer",
-            "amount": ""
+            "amount": " "
          }], //end of ingredients
          "difficulty": "Zeitaufwendig",
          "preparation": "Die Butter in einem Topf bräunen und den Zucker darin karamellisieren lassen.\
@@ -362,7 +362,7 @@ Auf den EL kommt die Füllung für eine Cannellonie und der TL schiebt den Inhal
          },
          {
             "name": "Salz und Pfeffer",
-            "amount": ""
+            "amount": " "
          }], //end of ingredients
          "difficulty": "Leicht",
          "preparation": "Die Zwiebel putzen, fein würfeln und in etwas Olivenöl anbraten.\
@@ -398,7 +398,7 @@ Guten Appetit!",
             "amount": "200 ml"
          },
          {
-            "name": "Ei",
+            "name": "Eier",
             "amount": "1 Stück"
          },
          {
@@ -411,7 +411,7 @@ Guten Appetit!",
          },
          {
             "name": "Salz",
-            "amount": ""
+            "amount": " "
          }], //end of ingredients
          "difficulty": "Leicht",
          "preparation": "Den Spargel waschen un das untere Drittel schälen.\
@@ -467,7 +467,7 @@ Guten Appetit!",
          },
          {
             "name": "Salz und Pfeffer",
-            "amount": ""
+            "amount": " "
          }], //end of ingredients
          "difficulty": "Mittel",
          "preparation": "Den Brokkoli zuallererst putzen und dann in kleine Röschen teilen, sodass diese im kochenden Wasser ca. 5 - 7 Minuten bissfest gekocht werden.\
@@ -514,11 +514,11 @@ Guten Appetit!",
          },
          {
             "name": "Petersilie",
-            "amount": ""
+            "amount": " "
          },
          {
             "name": "Salz und Pfeffer",
-            "amount": ""
+            "amount": " "
          }], //end of ingredients
          "difficulty": "Mittel",
          "preparation": "In einen kleinen Topf ca. 250 ml Wasser zum Kochen bringen.\
@@ -577,7 +577,7 @@ Verfeinern kann man die Suppe zusätzlich mit kleingeschnittener Petersilie oder
          "portion": "3 Portionen",
          "ingredient": [{ //begin of ingredients
              "name": "Nudeln",
-             "specification": "Wok - Nudeln",
+             "specification": "Wok-Nudeln",
              "amount": "1 Tüte"
          },
          {
@@ -634,7 +634,7 @@ Verfeinern kann man die Suppe zusätzlich mit kleingeschnittener Petersilie oder
          },
          {
             "name": "Salz und Pfeffer",
-            "amount": ""
+            "amount": " "
          }], //end of ingredients
          "difficulty": "Zeitaufwendig",
          "preparation": "Die Cashewkerne in zwei Längshälften teilen und in einer Pfanne ohne Fett anrösten und beiseite stellen.\
@@ -651,7 +651,7 @@ Auch das Hühnerbrustfilet kann weggelassen oder durch Fisch oder Shrimps ersetz
         //recipe number 12
         {
          "id": 12,
-         "name": "Gemüse - Curry",
+         "name": "Gemüse-Curry",
          "portion": "4 Portionen",
          "ingredient": [{ //begin of ingredients
              "name": "Reis",
@@ -699,7 +699,7 @@ Auch das Hühnerbrustfilet kann weggelassen oder durch Fisch oder Shrimps ersetz
          },
          {
             "name": "Salz und Pfeffer",
-            "amount": ""
+            "amount": " "
          }], //end of ingredients
          "difficulty": "Leicht",
          "preparation": "Das TK Gemüse auftauen lassen und währenddessen den Reis schonmal nach Packungsanleitung zubereiten.\
@@ -711,6 +711,413 @@ Nun den Joghurt mit unterrühren und alles zusammen mit Salz und Pfeffer abschme
 Zum guten Schluss nochmals alles ca. 10 Minuten köcheln lassen, bevor das Gemüse-Curry mit Reis und gehackter Petersilie serviert wird.\
 Guten Appetit!",
          "tip": "Das Gemüse ist gemischt als Tiefkühl Gemüse erhältlich und sollte mindestens 1 kg sein.",
+        },
+         //recipe number 13
+        {
+         "id": 13,
+         "name": "Fischbouletten",
+         "portion": "4 Portionen",
+         "ingredient": [{ //begin of ingredients
+             "name": "Fischfilet",
+             "amount": "500 g"
+         },
+         {
+            "name": "Eier",
+            "amount": "1 Stück" 
+         },
+         {
+            "name": "Paniermehl",
+            "amount": "4 - 5 EL"
+         },
+         {
+            "name": "Dill",
+            "amount": "1 - 2 TL"
+         },
+         {
+            "name": "Magarine",
+            "amount": " "
+         },
+         {
+            "name": "Paprikapulver",
+            "amount": " "
+         },
+         {
+            "name": "Salz und Pfeffer",
+            "amount": " "
+         }], //end of ingredients
+         "difficulty": "Leicht",
+         "preparation": "Das Fischfilet in einer Küchenmaschine oder per Hand sehr klein schneiden.\
+Zusammen mit dem Ei, 2 - 3 EL Paniermehl und dem Dill zu einer festeren Masse vermengen.\
+Das Ganze mit Salz, Pfeffer und Paprikapulver würzen.\
+Nun können die Bouletten geformt und im restlichen Paniermehl gewendet werden.\
+Zum Schluss können diese dann in einer heißen Pfanne gebraten werden.\
+Guten Appetit!",
+         "tip": "Dazu passt Kartoffelpürre und eine Dillsoße am Besten.\
+Das Fischfilet kann beliebig sein (Lachs, Räucherlachs, etc.), was dem eigenen Geschmack am Besten passt.",
+        },
+         //recipe number 14
+        {
+         "id": 14,
+         "name": "Bandnudeln mit frischen Lachs",
+         "portion": "4 Portionen",
+         "ingredient": [{ //begin of ingredients
+             "name": "Fischfilet",
+             "specification": "Lachs",
+             "amount": "400 g"
+         },
+         {
+            "name": "Nudeln",
+            "specification": "Bandnudeln",
+            "amount": "1 EL"
+         },
+         {
+            "name": "Zwiebel",
+            "amount": "1 Stück" 
+         },
+         {
+            "name": "Butter",
+            "amount": "1 EL"
+         },
+         {
+            "name": "Tomatenmark",
+            "amount": "1 TL"
+         },
+         {
+            "name": "Weißwein",
+            "amount": "125 ml"
+         },
+         {
+            "name": "Weinbrand",
+            "amount": "1 EL"
+         },
+         {
+            "name": "Sahne",
+            "amount": "300 ml"
+         },
+         {
+            "name": "Salz und Pfeffer",
+            "amount": " "
+         }], //end of ingredients
+         "difficulty": "Leicht",
+         "preparation": "Das Lachfilet mit einem scharfen Messer erst halbieren und dann in Fingerbreite Streifen schneiden.\
+Die Zwiebel putzen, in feine Würfel schneiden und zusammen mit der Butter in einer Pfanne mit schwacher Hitze glasig braten.\
+Das Tomatenmark, den Weißwein und den Weinbrand hinzugeben und bei straker Hitze einkochen lassen.\
+Nun die Sahne nach und nach hineinrühren und ebenfalls etwas einkochen lassen.\
+Das Ganze kann schonmal mit Salz, Pfeffer und beliebigen Kräutern gewürzt werden.\
+Während alles köchelt, können die Nudeln ebenfalls in kochendes Salzwasser hinzugegeben werden.\
+Der Lachs sollte nun ca. 5 Minuten in die Soße eingelegt werden, allerdings sollte dieser nur Garen und nicht kochen.\
+Zum Schluss kann alles zusammen vermengt werden.\
+Guten Appetit!",
+         "tip": "Variieren lässt sich das Gericht auch mit Reis anstelle der Bandnudeln.",
+        },
+        //recipe number 15
+        {
+         "id": 15,
+         "name": "Gefüllte Paprikaschoten",
+         "portion": "4 Portionen",
+         "ingredient": [{ //begin of ingredients
+             "name": "Paprikaschoten",
+             "amount": "4 Stück"
+         },
+         {
+            "name": "Hackfleisch",
+            "amount": "300 g"
+         },
+         {
+            "name": "Gemüsepaste",
+            "amount": "1 - 2 EL" 
+         },
+         {
+            "name": "Zwiebel",
+            "amount": "1 Stück"
+         },
+         {
+            "name": "Eier",
+            "amount": "1 Stück"
+         },
+         {
+            "name": "Send",
+            "amount": "2 TL"
+         },
+         {
+            "name": "Magarine",
+            "amount": "2 EL"
+         },
+         {
+            "name": "Paniermehl",
+            "amount": "2 - 3 EL"
+         },
+         {
+            "name": "Paprikapulver",
+            "amount": " "
+         },
+         {
+            "name": "Salz und Pfeffer",
+            "amount": " "
+         }], //end of ingredients
+         "difficulty": "Leicht",
+         "preparation": "Vorab den Backofen auf 150°C vorheizen.\
+Währenddessen von der Paprikk eine dünne Scheibe abschneiden, sodass diese einen 'sicheren' Stand hat.\
+Nun das obere Ende mit dem Strunk entfernen, aushöhlen, ordentlich waschen, sowie von innen salzen.\
+Die restlichen Zutaten, bis auf die Magarine, zu einer homogenen Masse vermengen und zusammen mit Salz, Pfeffer und Paprikapulver würzen.\
+Nun die Magarine in einer Pfanne erhitzen und darin die Paprika von jeder Seite anbraten.\
+Danach können diese mit der Füllmasse befüllt werden und zusammen mit dem restlichen Fett aus der Pfanne in eine Auflaufform gegeben werden.\
+Zum Schluss das Ganze nur noch für ungefähr 15 Minuten im Backofen backen.\
+Nach belieben, können die gefüllten Paprikas aus mit geriebenen Käse überstreut werden.\
+Guten Appetit!",
+         "tip": "Dazu passen perfekt Kartoffeln oder Reis.",
+        },
+        //recipe number 16
+        {
+         "id": 16,
+         "name": "Fleischkäse mit Honig und Röstzwiebeln",
+         "portion": "4 Portionen",
+         "ingredient": [{ //begin of ingredients
+             "name": "Fleischbrät",
+             "amount": "500 g"
+         },
+         {
+            "name": "Röstzwiebel",
+            "amount": "3 EL"
+         },
+         {
+            "name": "Honig",
+            "amount": "2 EL" 
+         },
+         {
+            "name": "Kräuter",
+            "amount": "3 EL"
+         }], //end of ingredients
+         "difficulty": "Leicht",
+         "preparation": "Vorab den Backofen auf 170°C vorheizen.\
+Als Kräuter können Dill, Schnittlauch, Petersilie, sowie andere beliebige Kräuter verwendet werden.\
+Diese sollten gründlich gewaschen, trocken geschüttelt und klein geschnitten werden.\
+Das Fleischbrät nun mit allen Zutaten ordentlich vermengen und in eine Aluschale beziehungsweise Kastenform geben.\
+Nun das Ganze für ingesamnt 30 - 40 Minuten backen lassen.\
+Guten Appetit!",
+         "tip": "Dazu passen Bratbohnen und Bratkartoffeln perfekt.",
+        },
+        //recipe number 17
+        {
+         "id": 17,
+         "name": "Paprika-Rahmenschnitzel",
+         "portion": "4 Portionen",
+         "ingredient": [{ //begin of ingredients
+             "name": "Putenschnitzel",
+             "amount": "4 Stück"
+         },
+         {
+            "name": "Paprika",
+            "amount": "1 Stück"
+         },
+         {
+            "name": "Tomatenpaprika",
+            "amount": "1 Glas" 
+         },
+         {
+            "name": "Zwiebel",
+            "amount": "1 Stück"
+         },
+         {
+            "name": "Knoblauch",
+            "amount": "2 Zehen"
+         },
+         {
+            "name": "Sahne",
+            "amount": "250 ml"
+         },
+         {
+            "name": "Ajvar",
+            "amount": "2 EL"
+         },
+         {
+            "name": "geriebener Käse",
+            "amount": "2 EL"
+         },
+         {
+            "name": "Magarine",
+            "amount": "2 EL"
+         },
+         {
+            "name": "Paprikapulver",
+            "amount": " "
+         },
+         {
+            "name": "Salz und Pfeffer",
+            "amount": " "
+         }], //end of ingredients
+         "difficulty": "Zeitaufwendig",
+         "preparation": "Vorab den Backofen auf 180°C vorheizen.\
+Währenddessen die Zwiebel und die Knoblauchzehen putzen und in fein schneiden.\
+1 Esslöffel in einer Pfanne erhitzen und darin die Zwiebel und den Knoblauch anschwitzen.\
+Nun die Paprikaschote halbieren, vom Kerngehäuse befreien, waschen und in Streifen schneiden.\
+Eine Aufflaufform kann nun mit einen Esslöffel Magarine eingefettet werden.\
+Während man die Tomatenpaprika abgießt, sollte etwas Flüssigkeit aufbewahrt werden.\
+Die Flüssigkeit nun mit der Sahne und dem Ajvar zusammen verquirlen.\
+Alles zusammen, bis aus die 'Soße', miteinander in der Aufflaufform vermengen und die 'Soße' darüber gießen.\
+Zum Schluss nur noch den Käse darüber streuen und das Gesamte für ungefähr 20 Minuten backen.\
+Guten Appetit!",
+         "tip": "Dazu passen Kartoffelspalten oder Reis.",
+        },
+        //recipe number 18
+        {
+         "id": 18,
+         "name": "Schweinefilet",
+         "portion": "4 Portionen",
+         "ingredient": [{ //begin of ingredients
+             "name": "Schweinefilet",
+             "amount": "600 g"
+         },
+         {
+            "name": "Bacon",
+            "amount": "2 Packungen"
+         },
+         {
+            "name": "Magarine",
+            "amount": "1 - 2 EL" 
+         },
+         {
+            "name": "Salz und Pfeffer",
+            "amount": " "
+         }], //end of ingredients
+         "difficulty": "Leicht",
+         "preparation": "Das Filet von der Silberhaut beziehungsweise Sehne und dem Fett entfernen.\
+Das Ganze nun in 2 - Finger dicke Streifen schneiden und mit der Hand flach drücken.\
+Nun mit Salz und Pfeffer würzen.\
+Die gesamten Filetscheiben nun an den Seiten mit Bacon umwickeln und in einer Pfanne mit der Magarine scharf anbraten.\
+Guten Appetit!",
+         "tip": "Die dazu servierten Beilagen können beliebig frei gewählt werden.",
+        },
+        //recipe number 19
+        {
+         "id": 19,
+         "name": "Gemüse-Reis-Pfanne",
+         "portion": "4 Portionen",
+         "ingredient": [{ //begin of ingredients
+             "name": "Reis",
+             "amount": "2 Tassen"
+         },
+         {
+            "name": "Wasser",
+            "amount": "4 Tassen"
+         },
+         {
+            "name": "passierte Tomaten",
+            "amount": "1 Dose" 
+         },
+         {
+            "name": "Tomatenmark",
+            "amount": "3 EL" 
+         },
+         {
+            "name": "Hackfleisch",
+            "amount": "500 g" 
+         },
+         {
+            "name": "Zucchini",
+            "amount": "1 Stück" 
+         },
+         {
+            "name": "Zwiebel",
+            "amount": "1 Stück" 
+         },
+         {
+            "name": "Knoblauch",
+            "amount": "2 Zehen" 
+         },
+         {
+            "name": "Paprika",
+            "amount": "2 Stück" 
+         },
+         {
+            "name": "Aubergine",
+            "amount": "1 Stück" 
+         },
+         {
+            "name": "Olivenöl",
+            "amount": "2 EL" 
+         },
+         {
+            "name": "Zucker",
+            "amount": "2 EL" 
+         },
+         {
+            "name": "Oregano",
+            "amount": " " 
+         },
+         {
+            "name": "Chilipulver",
+            "amount": " " 
+         },
+         {
+            "name": "Paprikapulver",
+            "amount": " " 
+         },
+         {
+            "name": "Salz und Pfeffer",
+            "amount": " "
+         }], //end of ingredients
+         "difficulty": "Leicht",
+         "preparation": "Das Wasser mit etwas Salz zum kochen bringen, den Reis hinzugeben und für ca. 40 Minuten unter gelegentlichen Rühren köcheln lassen.\
+Derweil das gesamte Gemüse gut putzen und in mundgerechte Würfel schneiden.\
+Nun das Gemüse in einer Pfanne zusammen mit dem Öl scharf anbraten und zur Seite stellen.\
+Danach in der Pfanne das Hackfleisch anbraten und zusammen mit dem Zucker, Tomatenmark, den passierten Tomaten und den Gemüse Vermengen.\
+Zum Schluss nur noch den Reis mit untermengen und nach belieben mit Kräutern und Gewürzen abschmecken.\
+Guten Appetit!",
+         "tip": "Die dazu servierten Beilagen können beliebig frei gewählt werden.",
+        },
+        //recipe number 20
+        {
+         "id": 20,
+         "name": "Schupfnudel-Pfanne",
+         "portion": "4 Portionen",
+         "ingredient": [{ //begin of ingredients
+             "name": "Suaerkraut",
+             "amount": "1 Tüte"
+         },
+         {
+            "name": "Kasslerkamm",
+            "amount": "2 Scheiben"
+         },
+         {
+            "name": "Schupfnudeln",
+            "amount": "1 Packung" 
+         },
+         {
+            "name": "Zwiebel",
+            "amount": "1 Stück" 
+         },
+         {
+            "name": "Speck",
+            "amount": "500 g" 
+         },
+         {
+            "name": "Zucchini",
+            "amount": "75 g" 
+         },
+         {
+            "name": "Magarine",
+            "amount": "2 EL" 
+         },
+         {
+            "name": "Knoblauch",
+            "amount": "2 Zehen" 
+         },
+         {
+            "name": "Salz und Pfeffer",
+            "amount": " "
+         }], //end of ingredients
+         "difficulty": "Leicht",
+         "preparation": "Die Zwiebel putzen und zusammen mit den Speck und dem Kasslerkamm in mundgerechte Stücke schneiden.\
+In einem Topf den Speck auslassen und die Zwiebeln darin anbraten.\
+Nun kann das Sauerkraut zusammen mit etwas Wasser hinzugeben und für ca. 40 Minuten köcheln lassen.\
+Lorbeerblätter geben dem Sauerkraut noch eine würzige Note mithinzu, falls gewünscht.\
+Währenddessen die Schupfnudeln in einer Pfanne mit der Magarine bräunlich anbraten und vorerst zur Seite stellen.\
+Den Kassler ebenfalls anbraten und ebenso zur Seite stellen.\
+Danach das abgetropfte Sauerkraut in der Pfanne anbraten und mit dem Kassler und den Schupfnudeln vermengen.\
+Zum Schluss das Ganze nur noch mit Kräutern und Gewürzen nach Geschmack würzen.\
+Guten Appetit!",
+         "tip": "Die dazu servierten Beilagen können beliebig frei gewählt werden.",
         }
     //end of "recipes"
     ] 
