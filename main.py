@@ -86,7 +86,7 @@ class App:
         button_reset["fg"] = "#000000"
         button_reset["justify"] = "center"
         button_reset["text"] = "Eingabe Rücksetzen"
-        button_reset.place(x=430,y=150,width=157,height=30)
+        button_reset.place(x=400,y=217,width=157,height=30)
         button_reset["command"] = self.button_reset_command
 
 
@@ -98,7 +98,7 @@ class App:
         button_close["fg"] = "#000000"
         button_close["justify"] = "center"
         button_close["text"] = "Schließen"
-        button_close.place(x=400,y=360,width=157,height=30)
+        button_close.place(x=400,y=390,width=157,height=30)
         print(self.button_close_command)
         button_close["command"] = self.button_close_command
 
@@ -111,7 +111,7 @@ class App:
         button_help["fg"] = "#000000"
         button_help["justify"] = "center"
         button_help["text"] = "Hilfe"
-        button_help.place(x=400,y=300,width=157,height=30)
+        button_help.place(x=400,y=303,width=157,height=30)
         button_help["command"] = self.button_help_command
 
 
@@ -123,7 +123,7 @@ class App:
         button_allrecipes["fg"] = "#000000"
         button_allrecipes["justify"] = "center"
         button_allrecipes["text"] = "Alle Rezepte anzeigen"
-        button_allrecipes.place(x=400,y=240,width=157,height=30)
+        button_allrecipes.place(x=400,y=260,width=157,height=30)
         button_allrecipes["command"] = self.button_allrecipes_command
 
 
@@ -177,7 +177,7 @@ class App:
 
 
     def button_close_command(self):
-        """ The method outputs a message within the command line 
+        """ The method closed the apllication and outputs a message within the command line 
             indicating that it was executed successfully"""
         question_box = messagebox.askquestion('Schließen der Anwendung', 'Möchten Sie die Anwendung wirklich schließen?', icon='error')
         if question_box == 'yes':
@@ -199,6 +199,7 @@ class App:
     def button_reset_command(self):
         """ The method outputs a message within the command line 
             indicating that it was executed successfully"""
+        self.root.listbox.delete(0,'end')
         print('Die Lebensmitteleingabe wurde erfolgreich zurückgesetzt.')
 #End Class App
 
