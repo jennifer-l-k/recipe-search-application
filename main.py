@@ -127,6 +127,43 @@ class App:
         button_allrecipes["command"] = self.button_allrecipes_command
 
 
+        #Label for the Listbox
+        label_listbox=tk.Label(self.root)
+        ft = tkFont.Font(family='Times',size=16)
+        label_listbox["font"] = ft
+        label_listbox["fg"] = "#000000"
+        label_listbox["justify"] = "center"
+        label_listbox["text"] = "Auflistung der Rezepte"
+        label_listbox.place(x=20,y=190,width=200,height=30)
+
+
+        #Listbox which show all the Recipes within the database
+        listbox = tk.Listbox(self.root)
+        listbox.place(x=20,y=220,width=300,height=200)
+        ft = tkFont.Font(family='Times',size=12)
+        listbox["font"] = ft
+        listbox.insert(1, "Gemüsepaste")
+        listbox.insert(2, "Sommer-Kartoffelsalat")
+        listbox.insert(3, "Kartoffelsuppe")
+        listbox.insert(4, "Regenbogen Nudeln")
+        listbox.insert(5, "Gefüllte Cannelloni")
+        listbox.insert(6, "Gemüseschmarrn")
+        listbox.insert(7, "Spargel in Parmesancrêps")
+        listbox.insert(8, "Warmer-Tortellini-Salat")
+        listbox.insert(9, "Couscous-Salat")
+        listbox.insert(10, "Möhren-Ingwer-Kokos-Schaumsüppchen")
+        listbox.insert(11, "China-Nudel-Pfanne")
+        listbox.insert(12, "Gemüse-Curry")
+        listbox.insert(13, "Fischbouletten")
+        listbox.insert(14, "Bandnudeln mit frischen Lachs")
+        listbox.insert(15, "Gefüllte Paprikaschoten")
+        listbox.insert(16, "Fleischkäse mit Honig und Röstzwiebeln")
+        listbox.insert(17, "Paprika Rahmenschnitzel")
+        listbox.insert(18, "Schweinefilet")
+        listbox.insert(19, "Gemüse-Reis-Pfanne")
+        listbox.insert(20, "Schupfnudel-Pfanne")
+
+
     def button_allrecipes_command(self):
         """ The method outputs a message within the command line 
             indicating that it was executed successfully"""
