@@ -14,7 +14,7 @@ class App:
         self.root.title("Python Laborprojekt | Rezept Auswahl")
         #setting window size
         width=600
-        height=500
+        height=450
         screenwidth = self.root.winfo_screenwidth()
         screenheight = self.root.winfo_screenheight()
         alignstr = '%dx%d+%d+%d' % (width, height, (screenwidth - width) / 2, (screenheight - height) / 2)
@@ -98,7 +98,7 @@ class App:
         button_close["fg"] = "#000000"
         button_close["justify"] = "center"
         button_close["text"] = "Schließen"
-        button_close.place(x=20,y=450,width=157,height=30)
+        button_close.place(x=400,y=360,width=157,height=30)
         print(self.button_close_command)
         button_close["command"] = self.button_close_command
 
@@ -111,7 +111,7 @@ class App:
         button_help["fg"] = "#000000"
         button_help["justify"] = "center"
         button_help["text"] = "Hilfe"
-        button_help.place(x=220,y=450,width=157,height=30)
+        button_help.place(x=400,y=300,width=157,height=30)
         button_help["command"] = self.button_help_command
 
 
@@ -123,7 +123,7 @@ class App:
         button_allrecipes["fg"] = "#000000"
         button_allrecipes["justify"] = "center"
         button_allrecipes["text"] = "Alle Rezepte anzeigen"
-        button_allrecipes.place(x=420,y=450,width=157,height=30)
+        button_allrecipes.place(x=400,y=240,width=157,height=30)
         button_allrecipes["command"] = self.button_allrecipes_command
 
 
@@ -134,12 +134,12 @@ class App:
         label_listbox["fg"] = "#000000"
         label_listbox["justify"] = "center"
         label_listbox["text"] = "Auflistung der Rezepte"
-        label_listbox.place(x=20,y=190,width=200,height=30)
+        label_listbox.place(x=40,y=190,width=200,height=30)
 
 
         #Listbox with a scrollbar which show all the Recipes within the database
         listbox = tk.Listbox(self.root)
-        listbox.place(x=20,y=220,width=300,height=200)
+        listbox.place(x=40,y=220,width=300,height=200)
         ft = tkFont.Font(family='Times',size=12)
         listbox["font"] = ft
 
@@ -165,10 +165,10 @@ class App:
         listbox.insert(20, "Schupfnudel-Pfanne")  
         
         scrollbar = tk.Scrollbar(self.root)
-        scrollbar.place(x=320,y=220,height=200)
+        scrollbar.place(x=340,y=220,height=200)
         scrollbar.config(command=listbox.yview)
         listbox.config(yscrollcommand=scrollbar.set)
-        
+
 
     def button_allrecipes_command(self):
         """ The method outputs a message within the command line 
