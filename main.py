@@ -137,11 +137,12 @@ class App:
         label_listbox.place(x=20,y=190,width=200,height=30)
 
 
-        #Listbox which show all the Recipes within the database
+        #Listbox with a scrollbar which show all the Recipes within the database
         listbox = tk.Listbox(self.root)
         listbox.place(x=20,y=220,width=300,height=200)
         ft = tkFont.Font(family='Times',size=12)
         listbox["font"] = ft
+
         listbox.insert(1, "Gemüsepaste")
         listbox.insert(2, "Sommer-Kartoffelsalat")
         listbox.insert(3, "Kartoffelsuppe")
@@ -161,8 +162,13 @@ class App:
         listbox.insert(17, "Paprika Rahmenschnitzel")
         listbox.insert(18, "Schweinefilet")
         listbox.insert(19, "Gemüse-Reis-Pfanne")
-        listbox.insert(20, "Schupfnudel-Pfanne")
-
+        listbox.insert(20, "Schupfnudel-Pfanne")  
+        
+        scrollbar = tk.Scrollbar(self.root)
+        scrollbar.place(x=320,y=220,height=200)
+        scrollbar.config(command=listbox.yview)
+        listbox.config(yscrollcommand=scrollbar.set)
+        
 
     def button_allrecipes_command(self):
         """ The method outputs a message within the command line 
