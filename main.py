@@ -6,7 +6,10 @@ import recipes
 
 class App:
     root: tk.Tk
+    listbox: tk.Listbox
+    entry_enterfoodkey: tk.Entry
     db: recipes.RecipesDatabase
+
 
     def __init__(self, root):
         self.root = root
@@ -21,6 +24,9 @@ class App:
         self.root.geometry(alignstr)
         self.root.resizable(width=False, height=False)
 
+        self.db = recipes.RecipesDatabase()
+        self.db.read_json()
+        
 
         #Label for the DHBW Logo
         label_banner=tk.Label(self.root)
@@ -66,16 +72,28 @@ class App:
 
 
         #Entry-Widget for the Foodkeys
-        entry_enterfoodkey=tk.Entry(self.root)
-        entry_enterfoodkey["bg"] = "#cfcccc"
-        entry_enterfoodkey["borderwidth"] = "1px"
-        entry_enterfoodkey["cursor"] = "arrow"
+        self.entry_enterfoodkey=tk.Entry(self.root)
+        self.entry_enterfoodkey["bg"] = "#cfcccc"
+        self.entry_enterfoodkey["borderwidth"] = "1px"
+        self.entry_enterfoodkey["cursor"] = "arrow"
         ft = tkFont.Font(family='Times',size=12)
-        entry_enterfoodkey["font"] = ft
-        entry_enterfoodkey["fg"] = "#000000"
-        entry_enterfoodkey["justify"] = "center"
-        entry_enterfoodkey["text"] = "Eingabe "
-        entry_enterfoodkey.place(x=430,y=110,width=157,height=30)
+        self.entry_enterfoodkey["font"] = ft
+        self.entry_enterfoodkey["fg"] = "#000000"
+        self.entry_enterfoodkey["justify"] = "center"
+        self.entry_enterfoodkey.place(x=260,y=110,width=157,height=30)
+
+
+        #Button to search after recipes within the Foodkey
+        button_search=tk.Button(self.root)
+        button_search["bg"] = "#cfcccc"
+        ft = tkFont.Font(family='Times',size=12)
+        button_search["font"] = ft
+        button_search["fg"] = "#000000"
+        button_search["justify"] = "center"
+        button_search["text"] = "Suchen"
+        button_search.place(x=430,y=110,width=157,height=30)
+        print(self.button_search_command)
+        button_search["command"] = self.button_search_command
 
 
         #Button to reset all the Foodkey within the Entry-Widget
@@ -138,47 +156,39 @@ class App:
 
 
         #Listbox with a scrollbar which show all the Recipes within the database
-        listbox = tk.Listbox(self.root)
-        listbox.place(x=40,y=220,width=300,height=200)
+        self.listbox = tk.Listbox(self.root)
+        self.listbox.place(x=40,y=220,width=300,height=200)
         ft = tkFont.Font(family='Times',size=12)
-        listbox["font"] = ft
-
-        listbox.insert(1, "Gemüsepaste")
-        listbox.insert(2, "Sommer-Kartoffelsalat")
-        listbox.insert(3, "Kartoffelsuppe")
-        listbox.insert(4, "Regenbogen Nudeln")
-        listbox.insert(5, "Gefüllte Cannelloni")
-        listbox.insert(6, "Gemüseschmarrn")
-        listbox.insert(7, "Spargel in Parmesancrêps")
-        listbox.insert(8, "Warmer-Tortellini-Salat")
-        listbox.insert(9, "Couscous-Salat")
-        listbox.insert(10, "Möhren-Ingwer-Kokos-Schaumsüppchen")
-        listbox.insert(11, "China-Nudel-Pfanne")
-        listbox.insert(12, "Gemüse-Curry")
-        listbox.insert(13, "Fischbouletten")
-        listbox.insert(14, "Bandnudeln mit frischen Lachs")
-        listbox.insert(15, "Gefüllte Paprikaschoten")
-        listbox.insert(16, "Fleischkäse mit Honig und Röstzwiebeln")
-        listbox.insert(17, "Paprika Rahmenschnitzel")
-        listbox.insert(18, "Schweinefilet")
-        listbox.insert(19, "Gemüse-Reis-Pfanne")
-        listbox.insert(20, "Schupfnudel-Pfanne")  
+        self.listbox["font"] = ft
         
         scrollbar = tk.Scrollbar(self.root)
         scrollbar.place(x=340,y=220,height=200)
-        scrollbar.config(command=listbox.yview)
-        listbox.config(yscrollcommand=scrollbar.set)
+        scrollbar.config(command = self.listbox.yview)
+        self.listbox.config(yscrollcommand = scrollbar.set)
+
+        self.show_all_recipes()
+
+
+    def button_search_command(self):
+        """..."""
+        self.listbox.delete(0,'end')
+        searched_recipes = self.db.search_recipes_by_ingredients(self.entry_enterfoodkey.get())
+        for recipe in searched_recipes:
+            self.listbox.insert(recipe.id, recipe.name)
+        print('Es wurden Rezepte für den Suchbegriff gefunden.')
+        #Try-Exception: get() bei einem nicht speziell definierten Wert "none" Fehlermeldung in listbox ausgeben
+        #Layout überarbeiten: Links Listbox, Rechts Rezeptausgabe, Fenster vergrößern, Scrollbar für die Rezeptausgabe, Unten Buttons
 
 
     def button_allrecipes_command(self):
-        """ The method outputs a message within the command line 
-            indicating that it was executed successfully"""
+        """..."""
+        self.listbox.delete(0,'end')
+        self.show_all_recipes()
         print('Es wurden alle Rezepte erfolgreich angezeigt.')
 
 
     def button_close_command(self):
-        """ The method closed the apllication and outputs a message within the command line 
-            indicating that it was executed successfully"""
+        """..."""
         question_box = messagebox.askquestion('Schließen der Anwendung', 'Möchten Sie die Anwendung wirklich schließen?', icon='error')
         if question_box == 'yes':
             self.root.destroy()
@@ -189,30 +199,26 @@ class App:
         
         
     def button_help_command(self):
-        """ The method outputs a message within the command line 
-            indicating that it was executed successfully"""
+        """..."""
         print('Die Hilfeseite wurde aufgerufen.')
         messagebox.showinfo('Hilfe', 'Geben Sie ein beliebiges Lebensmittel in das Suchfeld ein und es werden Ihnen entsprechende Rezepte mit dem Lebensmittel ausgegeben.\n\nViel Spaß.')
         print('Die Hilfeseite wurde geschlossen.')
 
 
     def button_reset_command(self):
-        """ The method outputs a message within the command line 
-            indicating that it was executed successfully"""
-        self.root.listbox.delete(0,'end')
+        """..."""
+        self.listbox.delete(0,'end')
         print('Die Lebensmitteleingabe wurde erfolgreich zurückgesetzt.')
+
+    
+    def show_all_recipes(self):
+        """..."""
+        for recipe_key in self.db.all_recipes_dict:
+            recipe_value = self.db.all_recipes_dict[recipe_key]
+            self.listbox.insert(recipe_key, recipe_value.name)
 #End Class App
 
-if __name__ == "__main__":
-    db = recipes.RecipesDatabase()
-    db.read_json()
-    tmp = db.search_recipes_by_ingredients("Nudeln")
-for recipe in tmp:
-    print(f"Id {recipe.id}: {recipe.name}")
-    #print(f"Id {recipe.id}: {recipe.name} -> Schwierigkeit: {recipe.difficulty}")
-    #print(f"Id {recipe.id}: {recipe.name}\n Zubereitung: {recipe.preparation}")
-    #print(f"Id {recipe.id}: {recipe.name}\n Zutaten: {recipe.ingredients}")
-#print(db.show_recipes_by_id(6))
+
 root = tk.Tk()
 app = App(root)
 root.mainloop()
