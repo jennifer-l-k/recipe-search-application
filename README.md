@@ -13,7 +13,7 @@ The user can then click on a recipe in this extra window, whereupon the correspo
 * Output field in the terminal for the listed recipe suggestions ✔️
 * Simple GUI with Tkinter
     * Input field or entry widget for the food keys ✔️
-    * Output field in an extra window for the listed recipe suggestions or indication that no recipe is available for it
+    * Output field in an extra listbox for the listed recipe suggestions or indication that no recipe is available for it ✔️
     * Linking within the output list to the corresponding recipe
 
 ### Nice-to-have
