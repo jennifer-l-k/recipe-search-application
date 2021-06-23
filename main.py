@@ -14,9 +14,9 @@ class App:
     def __init__(self, root):
         self.root = root
         #setting title
-        self.root.title("Python Laborprojekt | Rezept Auswahl")
+        self.root.title("Programmiersprachen - Einführung in Python")
         #setting window size
-        width=600
+        width=700
         height=450
         screenwidth = self.root.winfo_screenwidth()
         screenheight = self.root.winfo_screenheight()
@@ -37,7 +37,7 @@ class App:
         label_banner["fg"] = "#333333"
         label_banner["justify"] = "center"
         label_banner["text"] = ""
-        label_banner.place(x=0,y=0,width=599,height=30)   
+        label_banner.place(x=0,y=0,width=700,height=30)   
 
 
         #Label with the Author within the Label for the DHBW Logo
@@ -48,27 +48,18 @@ class App:
         label_author["fg"] = "#ffffff"
         label_author["justify"] = "center"
         label_author["text"] = "Erstellt von: Jennifer L. Krüger"
-        label_author.place(x=400,y=0,width=200,height=30)
+        label_author.place(x=500,y=0,width=200,height=30)
 
 
         #Label for the main header
         label_mainheader=tk.Label(self.root)
-        ft = tkFont.Font(family='Times',size=22)
+        ft = tkFont.Font(family='Times',size=10)
+        label_mainheader["bg"] = "#e2001a"
         label_mainheader["font"] = ft
-        label_mainheader["fg"] = "#333333"
+        label_mainheader["fg"] = "#ffffff"
         label_mainheader["justify"] = "center"
-        label_mainheader["text"] = "Python Laborprojekt"
-        label_mainheader.place(x=180,y=30,width=256,height=53)
-
-
-        #Label for the second header
-        label_subheader=tk.Label(self.root)
-        ft = tkFont.Font(family='Times',size=16)
-        label_subheader["font"] = ft
-        label_subheader["fg"] = "#333333"
-        label_subheader["justify"] = "center"
-        label_subheader["text"] = "Rezept Auswahl"
-        label_subheader.place(x=240,y=70,width=142,height=30)
+        label_mainheader["text"] = "Python Laborprojekt | Rezeptauswahl"
+        label_mainheader.place(x=0,y=0,width=250,height=30)
 
 
         #Entry-Widget for the Foodkeys
@@ -80,7 +71,8 @@ class App:
         self.entry_enterfoodkey["font"] = ft
         self.entry_enterfoodkey["fg"] = "#000000"
         self.entry_enterfoodkey["justify"] = "center"
-        self.entry_enterfoodkey.place(x=260,y=110,width=157,height=30)
+        #self.entry_enterfoodkey.insert(0, "Suchen nach...")
+        self.entry_enterfoodkey.place(x=361,y=50,width=157,height=30)
 
 
         #Button to search after recipes within the Foodkey
@@ -91,7 +83,7 @@ class App:
         button_search["fg"] = "#000000"
         button_search["justify"] = "center"
         button_search["text"] = "Suchen"
-        button_search.place(x=430,y=110,width=157,height=30)
+        button_search.place(x=528,y=50,width=157,height=30)
         print(self.button_search_command)
         button_search["command"] = self.button_search_command
 
@@ -104,7 +96,7 @@ class App:
         button_reset["fg"] = "#000000"
         button_reset["justify"] = "center"
         button_reset["text"] = "Eingabe Rücksetzen"
-        button_reset.place(x=400,y=217,width=157,height=30)
+        button_reset.place(x=28,y=360,width=157,height=30)
         button_reset["command"] = self.button_reset_command
 
 
@@ -116,7 +108,7 @@ class App:
         button_close["fg"] = "#000000"
         button_close["justify"] = "center"
         button_close["text"] = "Schließen"
-        button_close.place(x=400,y=390,width=157,height=30)
+        button_close.place(x=195,y=400,width=157,height=30)
         print(self.button_close_command)
         button_close["command"] = self.button_close_command
 
@@ -129,7 +121,7 @@ class App:
         button_help["fg"] = "#000000"
         button_help["justify"] = "center"
         button_help["text"] = "Hilfe"
-        button_help.place(x=400,y=303,width=157,height=30)
+        button_help.place(x=28,y=400,width=157,height=30)
         button_help["command"] = self.button_help_command
 
 
@@ -141,30 +133,21 @@ class App:
         button_allrecipes["fg"] = "#000000"
         button_allrecipes["justify"] = "center"
         button_allrecipes["text"] = "Alle Rezepte anzeigen"
-        button_allrecipes.place(x=400,y=260,width=157,height=30)
+        button_allrecipes.place(x=195,y=360,width=157,height=30)
         button_allrecipes["command"] = self.button_allrecipes_command
-
-
-        #Label for the Listbox
-        label_listbox=tk.Label(self.root)
-        ft = tkFont.Font(family='Times',size=16)
-        label_listbox["font"] = ft
-        label_listbox["fg"] = "#000000"
-        label_listbox["justify"] = "center"
-        label_listbox["text"] = "Auflistung der Rezepte"
-        label_listbox.place(x=40,y=190,width=200,height=30)
 
 
         #Listbox with a scrollbar which show all the Recipes within the database
         self.listbox = tk.Listbox(self.root)
-        self.listbox.place(x=40,y=220,width=300,height=200)
+        self.listbox.place(x=23,y=100,width=333,height=250)
         ft = tkFont.Font(family='Times',size=12)
         self.listbox["font"] = ft
         
-        scrollbar = tk.Scrollbar(self.root)
-        scrollbar.place(x=340,y=220,height=200)
-        scrollbar.config(command = self.listbox.yview)
-        self.listbox.config(yscrollcommand = scrollbar.set)
+        scrollbar_y = tk.Scrollbar(self.root)
+        scrollbar_y.place(x=345,y=100,height=250)
+        scrollbar_y.config(command = self.listbox.yview)
+
+        self.listbox.config(yscrollcommand = scrollbar_y.set)
 
         self.show_all_recipes()
 
@@ -172,11 +155,14 @@ class App:
     def button_search_command(self):
         """..."""
         self.listbox.delete(0,'end')
-        searched_recipes = self.db.search_recipes_by_ingredients(self.entry_enterfoodkey.get())
-        for recipe in searched_recipes:
-            self.listbox.insert(recipe.id, recipe.name)
-        print('Es wurden Rezepte für den Suchbegriff gefunden.')
-        #Try-Exception: get() bei einem nicht speziell definierten Wert "none" Fehlermeldung in listbox ausgeben
+        try:
+            searched_recipes = self.db.search_recipes_by_ingredients(self.entry_enterfoodkey.get())
+            for recipe in searched_recipes:
+                self.listbox.insert(recipe.id, recipe.name)
+            print('Es wurden Rezepte für den Suchbegriff gefunden.')
+        except:
+            self.listbox.insert(0,'Keine Rezepte verfügbar.')
+            print('Suchanfrage fehlgeschlagen')
         #Layout überarbeiten: Links Listbox, Rechts Rezeptausgabe, Fenster vergrößern, Scrollbar für die Rezeptausgabe, Unten Buttons
 
 
