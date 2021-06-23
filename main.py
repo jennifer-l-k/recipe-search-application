@@ -163,7 +163,6 @@ class App:
         except:
             self.listbox.insert(0,'Keine Rezepte verfügbar.')
             print('Suchanfrage fehlgeschlagen')
-        #Layout überarbeiten: Links Listbox, Rechts Rezeptausgabe, Fenster vergrößern, Scrollbar für die Rezeptausgabe, Unten Buttons
 
 
     def button_allrecipes_command(self):
@@ -193,6 +192,7 @@ class App:
 
     def button_reset_command(self):
         """..."""
+        self.entry_enterfoodkey.delete(0,'end')
         self.listbox.delete(0,'end')
         print('Die Lebensmitteleingabe wurde erfolgreich zurückgesetzt.')
 
