@@ -10,6 +10,7 @@ The user can then click on a recipe in this extra window, whereupon the correspo
 ### Must-haves
 * Already 10-20 included recipes ✔️
 * Reading of recipe data from a (JSON) file ✔️
+* Entering a single food key ✔️
 * Output field in the terminal for the listed recipe suggestions ✔️
 * Simple GUI with Tkinter
     * Input field or entry widget for the food keys ✔️
@@ -20,7 +21,8 @@ The user can then click on a recipe in this extra window, whereupon the correspo
 * Implementation of a help button with a small introduction ✔️
 * Implementation of an exit button with security query ✔️
 * Bilingual program selection (German and English)
-* All recipes can be listed with the help of an extra button or with a special command in the input field
+* All recipes can be listed with the help of an extra button or with a special command in the input field ✔️
+* Entering a list of Foodkeys
 * Food that is available in the household is displayed in green, otherwise in red
 * Sorting options by effort/difficulty, duration, meal times (breakfast, lunch or dinner) or recipe ranges (pasta-, potato-, rice- or meat dishes)
 
