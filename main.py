@@ -10,7 +10,6 @@ class App:
     entry_enterfoodkey: tk.Entry
     selected_recipe: tk.Label
     db: recipes.RecipesDatabase
-    search_by_id: recipes.Recipe
 
 
     def __init__(self, root):
@@ -129,7 +128,7 @@ class App:
         button_allrecipes["command"] = self.button_allrecipes_command
 
 
-        #Button to show all the Recipes within the database
+        #Button to show the Recipe which is selected
         button_select = tk.Button(self.root)
         button_select ["bg"] = "#cfcccc"
         ft = tkFont.Font(family='Times',size=12)
@@ -168,22 +167,21 @@ class App:
 
         #Text widget with a write proteced version to show the selected recipe
         self.selected_recipe = tk.Text(self.root)
-        self.selected_recipe.configure(state = "disabled")
         ft = tkFont.Font(family='Times',size=12)
         self.selected_recipe["bg"] = "#cfcccc"
         self.selected_recipe["font"] = ft
         self.selected_recipe["fg"] = "#000000"
         self.selected_recipe.place(x=365,y=60,width=322,height=410)
+        self.selected_recipe.configure(state = "disabled")
 
 
     def button_search_command(self):
         """..."""
         self.listbox.delete(0,'end')
-
         try:
             searched_recipes = self.db.search_recipes_by_ingredients(self.entry_enterfoodkey.get())
             for recipe in searched_recipes:
-                self.listbox.insert(recipe.id, recipe.name)
+                self.listbox.insert(tk.END, recipe)
             print('Es wurden Rezepte für den Suchbegriff gefunden.')
         except:
             self.listbox.insert(0,'Keine Rezepte für die Suchabfrage verfügbar.')
@@ -201,8 +199,12 @@ class App:
     def button_select_command(self):
         """..."""
         self.selected_recipe.delete(0,'end')
-        select = self.listbox.curselection()
-        self.selected_recipe.insert(self.search_by_id.id, select)
+        select = self.listbox.get(tk.ACTIVE)
+        recipe = self.db.name_dict[select]
+        
+        self.selected_recipe.configure(state = "normal")
+        self.selected_recipe.insert(tk.END, recipe.format_recipe())
+        self.selected_recipe.configure(state = "disabled")
         print('Es wurde das ausgewählte Rezept angezeigt.')
 
 
@@ -235,7 +237,7 @@ class App:
         """..."""
         for recipe_key in self.db.all_recipes_dict:
             recipe_value = self.db.all_recipes_dict[recipe_key]
-            self.listbox.insert(recipe_key, recipe_value.name)
+            self.listbox.insert(tk.END, recipe_value)
 #End Class App
 
 
