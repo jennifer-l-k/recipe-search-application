@@ -13,7 +13,7 @@ Projektname: Rezeptsuche
 
 ## Projektbeschreibung
 
-Das Programm zur Rezeptsuche ermöglicht es dem Anwender einen Lebensmittel-Key in einen entsprechenden Entry-Widget einzugeben, woraufhin eine, sich auf der linken Seite befindenen, ListBox die dazu passenden Rezepte nach dem Rezeptname ausgibt.
+Das Programm zur Rezeptsuche ermöglicht es dem Anwender einen Lebensmittel-Key in einen entsprechenden Entry-Widget einzugeben, woraufhin eine, sich auf der linken Seite befindende, List Box die dazu passenden Rezepte nach dem Rezeptname ausgibt.
 
 Sollte es kein entsprechendes Rezept zu dieser Zutat geben, so erhält der Endnutzer eine entsprechende Meldung.
 
@@ -23,11 +23,11 @@ Dem Nutzer stehen diverse Buttons zur Verfügung:
 
 - Alle Rezepte anzeigen: Möchte der User nicht nach bestimmten Rezepten nach einer vorgegebenen Zutat gucken, so hat dieser die Möglichkeit sich alle verfügbaren Rezepte aus der Datenbank anzeigen zu lassen
 
-- Ausgewähltes Rezept anzeigen: Hat der Endnutzer ein Rezeptname gefunden, bei welchen er das dazugehörige Rezept einsehen möchte, so kann dieser Button verwendet werden. Dabei öffnet sich das gesamte Rezept in einer schreibgeschützten Text Box auf der rechten Seite der Anwendung.
+- Ausgewähltes Rezept anzeigen: Hat der Endnutzer ein Rezeptname gefunden, bei welchen er das dazugehörige Rezept einsehen möchte, so kann dieser Button verwendet werden. Dabei öffnet sich das gesamte Rezept in einer schreibgeschützten Text Box auf der rechten Seite der Anwendung
 
-- Hilfe: Hier bekommt der Nutzer eine kurz gehaltene Instruktion, wie die Applikation zu verwenden ist.
+- Hilfe: Hier bekommt der Nutzer eine kurz gehaltene Instruktion, wie die Applikation zu verwenden ist
 
-- Schließen: Damit lässt sich die gesamte Applikation nach einer Sicherheitsabfrage beenden.
+- Schließen: Damit lässt sich die gesamte Applikation nach einer Sicherheitsabfrage beenden
 
 ## Auflistung der Abhängigkeiten : Externe Komponenten
 - pyjson5
@@ -99,7 +99,7 @@ Dabei erfolgt auf der linken Seite eine Ausgabe der entsprechenden Rezeptliste �
 - Ein extra Button, der alle verfügbaren Rezepte aus der Datenbank innerhalb einer List Box anzeigt
 - Implementierung einer Scrollbar bei ggf. zu langen Listen, Texten für das entsprechende Layout
 
-### Wo liegen bekannten Beschränkungen?
+### Wo liegen bekannte Beschränkungen?
 - Identische Eingabe der Zutat
 
 Damit der Endnutzer eine entsprechende Ausgabe der Rezepte nach einer Eingabe im Entry Widget erhält, muss die Schreibweise dieser Zutat identisch mit der hinterlegten Schreibweise innerhalb der Rezeptdatenbank sein. 
