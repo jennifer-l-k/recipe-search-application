@@ -108,4 +108,4 @@ Stimmt diese nicht überein, beispielsweise weil die Groß- und Kleinschreibung 
 
 Diese bekannte Einschränkung kann mithilfe einer Implementierung der Hamming Distanz verhindert werden. Denn so können Fehlerkorrekturen innerhalb der Dateneinheit mit den gültigen Zeichen innerhalb der Datenbank verglichen werden. 
 
-Danach erfolt die Fehlerkorrektur nach dem Wahrscheinlichkeitsprinzip. Das heißt es wird verglichen und abgewogen, welche Zeichenfolge am Wahrscheinlichsten auf die Fehlererkennung zutrifft und dementsprechend wird diese korrigiert.
+Danach erfolgt die Fehlerkorrektur nach dem Wahrscheinlichkeitsprinzip. Das heißt es wird verglichen und abgewogen, welche Zeichenfolge am Wahrscheinlichsten auf die Fehlererkennung zutrifft und dementsprechend wird diese korrigiert.
