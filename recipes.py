@@ -26,12 +26,21 @@ class Recipe:
     ingredients: list[Ingredient] = dataclasses.field(
         default_factory=list)
 
+    def __str__(self):
+        return self.name
+
+    def format_recipe(self):
+        return "Rezept hier:" + self.name
+
+
 @dataclass
 class RecipesDatabase:
     """Reading in the recipe database with processing of the data in various functions.
-    These are divided into the function "read_json" and "search_recipes_by_ingredients."""
+    These are divided into the methods "read_json" and "search_recipes_by_ingredients."""
     all_recipes_dict: dict = dataclasses.field(
-        default_factory = dict) 
+        default_factory = dict)
+    name_dict: dict = dataclasses.field(
+        default_factory = dict)
     ingredient_dict: dict = dataclasses.field(
         default_factory = dict) 
 
@@ -58,9 +67,9 @@ class RecipesDatabase:
                     current_recipes = []
                 current_recipes.append(new_recipe.id)
                 self.ingredient_dict[new_ingredient.name.casefold()] = current_recipes
-            self.all_recipes_dict[new_recipe.id] = new_recipe  #Dictonary nach ID
+            self.all_recipes_dict[new_recipe.id] = new_recipe  #Dictonary after ID
+            self.name_dict[new_recipe.name] = new_recipe #Dictionary after name, because of the Listbox Widget
 
-    
     def search_recipes_by_ingredients(self,ingredient):
         """Search function for a food key within the recipe database."""
         recipes = []
@@ -68,8 +77,3 @@ class RecipesDatabase:
         for recipe_id in tmp:
             recipes.append(self.all_recipes_dict[recipe_id])
         return recipes
-
-
-    def show_recipes_by_id(self, recipe_id):
-        """Search function for an id key within the recipe database."""
-        return self.all_recipes_dict[recipe_id]
