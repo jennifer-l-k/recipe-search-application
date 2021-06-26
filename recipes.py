@@ -31,7 +31,27 @@ class Recipe:
         
 
     def format_recipe(self):
-        return self.name + "\n\n\nAusreichend für: " + self.portion + "\n\nSchwierigkeit: " + self.difficulty + "\n\nZubereitung: " + self.preparation + "\n\nTipp: " + self.tip
+        list_of_ingredients = "Zutaten: \n"
+
+        for ingredients_list in self.ingredients:
+            list_of_ingredients += f"\n- {ingredients_list.name}"
+            if ingredients_list.specification == "":
+                list_of_ingredients += f"\n  {ingredients_list.amount}\n"
+            else:
+                list_of_ingredients += f"\n  {ingredients_list.specification}"
+                list_of_ingredients += f"\n  {ingredients_list.amount}\n"
+            
+
+        out = self.name +"\n\n\n"
+        out += f"Ausreichend für: {self.portion}\n"
+        out += f"\n{list_of_ingredients}"
+        out += f"Schwierigkeit: {self.difficulty}\n"
+        out += f"\nZubereitung: {self.preparation}\n"
+        out += f"\nTipp: {self.tip}"
+        
+        
+        return out
+        #return self.name + "\n\n\nAusreichend für: " + self.portion + "\n\nSchwierigkeit: " + self.difficulty + "\n\nZubereitung: " + self.preparation + "\n\nTipp: " + self.tip
 
 
 @dataclass
