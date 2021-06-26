@@ -98,7 +98,7 @@ class App:
         self.listbox["font"] = ft
         
         scrollbar_listbox = tk.Scrollbar(self.root)
-        scrollbar_listbox.place(x=345,y=100,height=290)
+        scrollbar_listbox.place(x=345,y=101,height=289)
         scrollbar_listbox.config(command = self.listbox.yview)
 
         self.listbox.config(yscrollcommand = scrollbar_listbox.set)
