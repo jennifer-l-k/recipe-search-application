@@ -43,13 +43,13 @@
             "amount": "3 - 4 Stück"
          }], //end of ingredients
          "difficulty": "Leicht",
-         "preparation": "Zu aller Erst das Gemüse putzen und in kleine Würfel schneiden, die Kräuter waschen und ebenfalls klein schneiden.\
-Danach soll alles miteinander fein püriert werden.\
-Das Pürierte nun abwiegen und das Gewicht durch 6 teilen.\
-Diese Menge dann an Salz hinzugeben, durchmengen, ziehen lassen und in die Gläser verteilen.\
-Nun die Gläser gut verschließen und in den Kühlschrank stellen.\
+         "preparation": "Zu aller Erst das Gemüse putzen und in kleine Würfel schneiden, die Kräuter waschen und ebenfalls klein schneiden.\n\
+Danach soll alles miteinander fein püriert werden.\n\
+Das Pürierte nun abwiegen und das Gewicht durch 6 teilen.\n\
+Diese Menge dann an Salz hinzugeben, durchmengen, ziehen lassen und in die Gläser verteilen.\n\
+Nun die Gläser gut verschließen und in den Kühlschrank stellen.\n\
 Diese Gemüsemischung hält sich bis zu 10 Monate und bildet die pefekte Grundlage zum würzen von Suppen und Soßen.",
-         "tip": "Das Salz konserviert das Gemüse und macht es haltbarer.\
+         "tip": "Das Salz konserviert das Gemüse und macht es haltbarer.\n\
 Die benötigte Menge zum würzen von Soßen und Suppen muss ausprobiert werden, ein Richtwert ist 2 Teelöffel auf 250 ml Wasser.",
         },
         //recipe number 2
@@ -82,13 +82,13 @@ Die benötigte Menge zum würzen von Soßen und Suppen muss ausprobiert werden, 
             "amount": " " 
          }], //end of ingredients
          "difficulty": "Leicht",
-         "preparation": "Die Kartoffeln mit Schale waschen und ca. 20 Minuten weich kochen, dann abgießen, pellen und abkühlen lassen.\
-Die Gurke kann während der Kochzeit der Kartoffeln gewaschen, geschält und mit einer Reibe in dünne Scheiben gehobelt werden.\
-Danach die Zwiebel putzen und in feine Würfel schneiden.\
-Die Kartoffeln nun in Scheiben schneiden und mit den Gurkenscheiben und den Zwiebelwürfeln in eine Schüssel geben.\
-Die Mayonnaise zusammen mit diversen beliebigen Kräutern und den Sonnenblumenöl, sowie 3 EL Wasser verrühren.\
-Nun die 'Soße' mit den Kartoffeln vermengen.\
-Zu guter Schluss noch den kartoffelsalat mit Salz und Pfeffer abschmecken.\
+         "preparation": "Die Kartoffeln mit Schale waschen und ca. 20 Minuten weich kochen, dann abgießen, pellen und abkühlen lassen.\n\
+Die Gurke kann während der Kochzeit der Kartoffeln gewaschen, geschält und mit einer Reibe in dünne Scheiben gehobelt werden.\n\
+Danach die Zwiebel putzen und in feine Würfel schneiden.\n\
+Die Kartoffeln nun in Scheiben schneiden und mit den Gurkenscheiben und den Zwiebelwürfeln in eine Schüssel geben.\n\
+Die Mayonnaise zusammen mit diversen beliebigen Kräutern und den Sonnenblumenöl, sowie 3 EL Wasser verrühren.\n\
+Nun die 'Soße' mit den Kartoffeln vermengen.\n\
+Zu guter Schluss noch den kartoffelsalat mit Salz und Pfeffer abschmecken.\n\
 Guten Appetit!",
          "tip": "-",
         },
@@ -134,15 +134,15 @@ Guten Appetit!",
             "amount": " "
          }], //end of ingredients
          "difficulty": "Leicht",
-         "preparation": "Als erstes sollen die Kartoffeln und das Suppengrün geputzt werden.\
-Das Suppengrün dann in kleine Würfel und die Kartoffeln in etwas größeren Würfel schneiden.\
-Alles in einen Topf geben, mit 1 Liter Wasser aufgießen, Gemüsepaste, Piment und Lorbeerblätter zugeben und zum kochen bringen.\
-Währenddessen kann der Speck fein gewürfelt und in einer Pfanne ausgelassen werden.\
-Die Zwiebeln putzen und ebenfalls fein gewürfelt zum Speck geben und mit anschwitzen.\
-Anschließend soll der Speck zusammen mit den Zwiebelwürfeln mit in die Suppe gegeben werden.\
-Nach ca. 20 Minuten, wenn alles gar ist, kann die Suppe mit dem Pürierstab bis zur gewünschten Konsistenz pürieren.\
-Eventuell mit Salz und Pfeffer nach würzen.\
-Hinzu kommen am Ende die Petersilie und wenn gewünscht weitere beliebige Kräuter.\
+         "preparation": "Als erstes sollen die Kartoffeln und das Suppengrün geputzt werden.\n\
+Das Suppengrün dann in kleine Würfel und die Kartoffeln in etwas größeren Würfel schneiden.\n\
+Alles in einen Topf geben, mit 1 Liter Wasser aufgießen, Gemüsepaste, Piment und Lorbeerblätter zugeben und zum kochen bringen.\n\
+Währenddessen kann der Speck fein gewürfelt und in einer Pfanne ausgelassen werden.\n\
+Die Zwiebeln putzen und ebenfalls fein gewürfelt zum Speck geben und mit anschwitzen.\n\
+Anschließend soll der Speck zusammen mit den Zwiebelwürfeln mit in die Suppe gegeben werden.\n\
+Nach ca. 20 Minuten, wenn alles gar ist, kann die Suppe mit dem Pürierstab bis zur gewünschten Konsistenz pürieren.\n\
+Eventuell mit Salz und Pfeffer nach würzen.\n\
+Hinzu kommen am Ende die Petersilie und wenn gewünscht weitere beliebige Kräuter.\n\
 Guten Appetit!",
          "tip": "-",
         },
@@ -205,14 +205,14 @@ Guten Appetit!",
             "amount": " "
          }], //end of ingredients
          "difficulty": "Mittel",
-         "preparation": "Die Gemüsesorten als erstes putzen, waschen und in feine längliche Streifen schneiden beziehungsweise mit einem Sparschäler Streifen abschneiden.\
-Parallel dazu können die Nudeln kochen.\
-In eine kleine Schüssel die Erdnusscreme, Sojasauce, Honig oder Agavendicksaft und das Paprikapulver geben und den Knoblauch hineinreiben oder pressen.\
-Nun alles miteinander gut vermengen, damit daraus eine Art Soße entstehen kann.\
-In einer großen Pfanne nun das Kokosöl erhitzen und das Gemüse darin anbraten.\
-In dieser Zeit kann auch der Sesam in einer anderen Pfanne ohne Fett angeröstet werden.\
-Die Nudeln abtropfen und mit der Soße zum Gemüse geben und verrühren, würzen und auf die Teller verteilen.\
-Den Sesam kann man nun nach belieben über die Nudeln streuen.\
+         "preparation": "Die Gemüsesorten als erstes putzen, waschen und in feine längliche Streifen schneiden beziehungsweise mit einem Sparschäler Streifen abschneiden.\n\
+Parallel dazu können die Nudeln kochen.\n\
+In eine kleine Schüssel die Erdnusscreme, Sojasauce, Honig oder Agavendicksaft und das Paprikapulver geben und den Knoblauch hineinreiben oder pressen.\n\
+Nun alles miteinander gut vermengen, damit daraus eine Art Soße entstehen kann.\n\
+In einer großen Pfanne nun das Kokosöl erhitzen und das Gemüse darin anbraten.\n\
+In dieser Zeit kann auch der Sesam in einer anderen Pfanne ohne Fett angeröstet werden.\n\
+Die Nudeln abtropfen und mit der Soße zum Gemüse geben und verrühren, würzen und auf die Teller verteilen.\n\
+Den Sesam kann man nun nach belieben über die Nudeln streuen.\n\
 Guten Appetit!",
          "tip": "-",
         },
@@ -299,20 +299,20 @@ Guten Appetit!",
             "amount": " "
          }], //end of ingredients
          "difficulty": "Zeitaufwendig",
-         "preparation": "Die Butter in einem Topf bräunen und den Zucker darin karamellisieren lassen.\
-Nun die Dose Tomaten, die Tomatensuppe und 1 EL Paprikapulver hinzufügen und bei niedriger Temperatur köcheln lassen.\
-Das Gemüse putzen, waschen und zusammen mit den Schinken in kleine Würfel schneiden.\
-Das Olivenöl nun in einer hohen Pfanne heiß werden lassen.\
-Das Gemüse darin scharf anbraten, den Schinken, das restliche Paprikapulver und das Tomatenmark zugeben und noch kurz mitbraten.\
-Den Ofen auf 160°C Umluft vorheizen.\
-Währenddessen kann die Cannellonie-Füllung etwas abkühlen.\
-Dann das Gemüse in eine Schüssel geben und zusammen mit Schmand, geriebenen Käse und beliebigen Kräutern gut vermischen.\
-Nun können die Cannellonie befüllt und in eine Auflaufform gelegt werden.\
-Zum Schluss die Tomatensoße über die Cannellonie gießen, mit Parmesan bestreuen und im Backofen etwa 30 Minuten überbacken.\
+         "preparation": "Die Butter in einem Topf bräunen und den Zucker darin karamellisieren lassen.\n\
+Nun die Dose Tomaten, die Tomatensuppe und 1 EL Paprikapulver hinzufügen und bei niedriger Temperatur köcheln lassen.\n\
+Das Gemüse putzen, waschen und zusammen mit den Schinken in kleine Würfel schneiden.\n\
+Das Olivenöl nun in einer hohen Pfanne heiß werden lassen.\n\
+Das Gemüse darin scharf anbraten, den Schinken, das restliche Paprikapulver und das Tomatenmark zugeben und noch kurz mitbraten.\n\
+Den Ofen auf 160°C Umluft vorheizen.\n\
+Währenddessen kann die Cannellonie-Füllung etwas abkühlen.\n\
+Dann das Gemüse in eine Schüssel geben und zusammen mit Schmand, geriebenen Käse und beliebigen Kräutern gut vermischen.\n\
+Nun können die Cannellonie befüllt und in eine Auflaufform gelegt werden.\n\
+Zum Schluss die Tomatensoße über die Cannellonie gießen, mit Parmesan bestreuen und im Backofen etwa 30 Minuten überbacken.\n\
 Guten Appetit!",
-         "tip": "Die Cannellonie können mit diversen Methoden befüllt werden.\
-Entweder man füllt die Füllung in einen Gefrierbeutel und schneidet eine Ecke davon ab, sodass der Inhalt in die Cannellonie gepresst werden kann oder\
-man befüllt diese mithilfe von zwei Löffeln (1 TL und 1 EL).\
+         "tip": "Die Cannellonie können mit diversen Methoden befüllt werden.\n\
+Entweder man füllt die Füllung in einen Gefrierbeutel und schneidet eine Ecke davon ab, sodass der Inhalt in die Cannellonie gepresst werden kann oder\n\
+man befüllt diese mithilfe von zwei Löffeln (1 TL und 1 EL).\n\
 Auf den EL kommt die Füllung für eine Cannellonie und der TL schiebt den Inhalt vorsichtig in die Cannellonie herein.",
         },
         //recipe number 6
@@ -365,18 +365,18 @@ Auf den EL kommt die Füllung für eine Cannellonie und der TL schiebt den Inhal
             "amount": " "
          }], //end of ingredients
          "difficulty": "Leicht",
-         "preparation": "Die Zwiebel putzen, fein würfeln und in etwas Olivenöl anbraten.\
-Die Champignos ebenfalls putzen und in Scheiben schneiden.\
-Die Möhren und die Zucchini waschen, genau wie die Zwiebeln fein würfeln und zusammen mit den Chmapignos zu den Zwiebelwürfeln geben.\
-Mit etwas Salz und Pfeffer würzen und etwa 5 minuten dünsten lassen.\
-Das gesamte Gemüse in ein Sieb geben und alles gut abtropfen lassen.\
-Nun soll der Knoblauch geputzt und gerieben werden.\
-Das Eigelb dann mit der Milch, den Knoblauch, Parmesan und einen kleinen gehäuften Teelöffel Salz verquirlen.\
-Nun kann das Mehl hinzugegeben werden, damit das ganze sich gut verrühren lässt.\
-Etwas Öl in einer Pfanne erhitzen und den Teig hineingießen, sodass dieser bei mittlerer Hitze goldgelb wird angebacken wird.\
-Mit einen Pfannwender sollte der Teig nun in 4 Teile geteilt werden.\
-Diese 4 Teile werden nun von der anderen Seite ebenfalls goldgelb gebacken.\
-Zum Schluss werden die 4 Stücke nochmals geteilt, bis diese in Mungerechten Stückgrößen sind.\
+         "preparation": "Die Zwiebel putzen, fein würfeln und in etwas Olivenöl anbraten.\n\
+Die Champignos ebenfalls putzen und in Scheiben schneiden.\n\
+Die Möhren und die Zucchini waschen, genau wie die Zwiebeln fein würfeln und zusammen mit den Chmapignos zu den Zwiebelwürfeln geben.\n\
+Mit etwas Salz und Pfeffer würzen und etwa 5 minuten dünsten lassen.\n\
+Das gesamte Gemüse in ein Sieb geben und alles gut abtropfen lassen.\n\
+Nun soll der Knoblauch geputzt und gerieben werden.\n\
+Das Eigelb dann mit der Milch, den Knoblauch, Parmesan und einen kleinen gehäuften Teelöffel Salz verquirlen.\n\
+Nun kann das Mehl hinzugegeben werden, damit das ganze sich gut verrühren lässt.\n\
+Etwas Öl in einer Pfanne erhitzen und den Teig hineingießen, sodass dieser bei mittlerer Hitze goldgelb wird angebacken wird.\n\
+Mit einen Pfannwender sollte der Teig nun in 4 Teile geteilt werden.\n\
+Diese 4 Teile werden nun von der anderen Seite ebenfalls goldgelb gebacken.\n\
+Zum Schluss werden die 4 Stücke nochmals geteilt, bis diese in Mungerechten Stückgrößen sind.\n\
 Guten Appetit!",
          "tip": "Dazu passt wunderbar ein Knoblauch-Dip und ein Salat.",
         },
@@ -414,12 +414,12 @@ Guten Appetit!",
             "amount": " "
          }], //end of ingredients
          "difficulty": "Leicht",
-         "preparation": "Den Spargel waschen un das untere Drittel schälen.\
-Danach den gesamten Spargel in kochendes Salzwasser ca. 10 Minuten garen lassen, abgießen und zum Schluss abschrecken.\
-Aus dem Mehl, der Milch, dem Ei, dem Parmesan, sowie etwas Salz zu einen Teig anrühren.\
-Danach sollte der Teig etwa 15 Minuten ruhen, um aufzuquellen.\
-In einer Pfanne kann nun die Butter heiß gemacht werden, um darin 6 Crêps zu backen.\
-Ganz zum Schluss muss nur noch ein paar Stangen Spargel in jeden Crêps eingerollt werden.\
+         "preparation": "Den Spargel waschen un das untere Drittel schälen.\n\
+Danach den gesamten Spargel in kochendes Salzwasser ca. 10 Minuten garen lassen, abgießen und zum Schluss abschrecken.\n\
+Aus dem Mehl, der Milch, dem Ei, dem Parmesan, sowie etwas Salz zu einen Teig anrühren.\n\
+Danach sollte der Teig etwa 15 Minuten ruhen, um aufzuquellen.\n\
+In einer Pfanne kann nun die Butter heiß gemacht werden, um darin 6 Crêps zu backen.\n\
+Ganz zum Schluss muss nur noch ein paar Stangen Spargel in jeden Crêps eingerollt werden.\n\
 Guten Appetit!",
          "tip": "Dazu passt wunderbar ein Kräuterquark.",
         },
@@ -470,12 +470,12 @@ Guten Appetit!",
             "amount": " "
          }], //end of ingredients
          "difficulty": "Mittel",
-         "preparation": "Den Brokkoli zuallererst putzen und dann in kleine Röschen teilen, sodass diese im kochenden Wasser ca. 5 - 7 Minuten bissfest gekocht werden.\
-Die Paprika, den Schinken und die Frühlingszwiebel putzen und in kleine Würfel, bzw. Ringe schneiden.\
-Danach in einer großen Schlüssel die Brokkoli-Röschen, die Paprika, die Frühlingszwiebeln, den Mais, sowie den Schinken vermischen.\
-Die Mayonnaise, den Joghurt und den Essig kann man bereits als ein Dressing herstellen und mit den restlichen Zutaten vermengen.\
-Zu guter Schluss werden die Tortellini nach Packungsanweisung zubereitet und noch warm zu den Salat gegeben.\
-Nach belieben kann man das Ganze nun noch würzen mit Salz, Pfeffer und diversen Kräutern.\
+         "preparation": "Den Brokkoli zuallererst putzen und dann in kleine Röschen teilen, sodass diese im kochenden Wasser ca. 5 - 7 Minuten bissfest gekocht werden.\n\
+Die Paprika, den Schinken und die Frühlingszwiebel putzen und in kleine Würfel, bzw. Ringe schneiden.\n\
+Danach in einer großen Schlüssel die Brokkoli-Röschen, die Paprika, die Frühlingszwiebeln, den Mais, sowie den Schinken vermischen.\n\
+Die Mayonnaise, den Joghurt und den Essig kann man bereits als ein Dressing herstellen und mit den restlichen Zutaten vermengen.\n\
+Zu guter Schluss werden die Tortellini nach Packungsanweisung zubereitet und noch warm zu den Salat gegeben.\n\
+Nach belieben kann man das Ganze nun noch würzen mit Salz, Pfeffer und diversen Kräutern.\n\
 Guten Appetit!",
          "tip": "Statt den Weinessig kann man auch hellen Balsamicoessig verwenden.",
         },
@@ -521,14 +521,14 @@ Guten Appetit!",
             "amount": " "
          }], //end of ingredients
          "difficulty": "Mittel",
-         "preparation": "In einen kleinen Topf ca. 250 ml Wasser zum Kochen bringen.\
-Sobald das Wasser kochet, den Topf vom Herd nehmen und direkt den Couscous einrühren.\
-Dies kann nun zur Seite gestellt werden, damit der Couscous mindesten 5 Minuten quellen kann.\
-Nun die Gurke, Tomate, Zwiebel, sowie die Paprika putzen, schälen und in kleine Würfel schneiden, um dies anschließend zu vermischen.\
-Das ganze mit etwas Salz würzen.\
-Die Zitrone nun auspressen und den daraus gewonnenen Zitronensaft mit 2 EL Olivenöl, sowie Salz und Pfeffer zu einen Dressing verrühren.\
-Der letzte EL Olivenöl wird mit dem augequollenen Couscous mittels einer Gabel vermengt, damit dieser nicht klebt und die Körner schön locker bleiben.\
-Zum Schluss alles kräftig miteinander durchmengen und die Petersilie darüber streuen.\
+         "preparation": "In einen kleinen Topf ca. 250 ml Wasser zum Kochen bringen.\n\
+Sobald das Wasser kochet, den Topf vom Herd nehmen und direkt den Couscous einrühren.\n\
+Dies kann nun zur Seite gestellt werden, damit der Couscous mindesten 5 Minuten quellen kann.\n\
+Nun die Gurke, Tomate, Zwiebel, sowie die Paprika putzen, schälen und in kleine Würfel schneiden, um dies anschließend zu vermischen.\n\
+Das ganze mit etwas Salz würzen.\n\
+Die Zitrone nun auspressen und den daraus gewonnenen Zitronensaft mit 2 EL Olivenöl, sowie Salz und Pfeffer zu einen Dressing verrühren.\n\
+Der letzte EL Olivenöl wird mit dem augequollenen Couscous mittels einer Gabel vermengt, damit dieser nicht klebt und die Körner schön locker bleiben.\n\
+Zum Schluss alles kräftig miteinander durchmengen und die Petersilie darüber streuen.\n\
 Guten Appetit!",
          "tip": "Dieser Salat passt gut als Beilage zu gegrilltem und gebratenem Fleisch.",
         },
@@ -562,12 +562,12 @@ Guten Appetit!",
             "amount": "1 - 2 TL"
          }], //end of ingredients
          "difficulty": "Leicht",
-         "preparation": "Die Möhren und den Ingwer schälen, sowie in kleine und feine Würfel schneiden.\
-Die Butter in einem Topf schmelzen und nach einer leichten bräune den Zucker zugeben zum karamellisieren.\
-Nun alle anderen Zutaten hinzugeben und solange köcheln lassen, bis die Möhren weich sind.\
-Anschließend alles mit einen (Stab-)Mixer gut durchmixen.\
+         "preparation": "Die Möhren und den Ingwer schälen, sowie in kleine und feine Würfel schneiden.\n\
+Die Butter in einem Topf schmelzen und nach einer leichten bräune den Zucker zugeben zum karamellisieren.\n\
+Nun alle anderen Zutaten hinzugeben und solange köcheln lassen, bis die Möhren weich sind.\n\
+Anschließend alles mit einen (Stab-)Mixer gut durchmixen.\n\
 Guten Appetit!",
-         "tip": "Dazu schmecken auf Zitronengras gespießte kleine Bouletten oder gebratene Hänchenbrustfilets.\
+         "tip": "Dazu schmecken auf Zitronengras gespießte kleine Bouletten oder gebratene Hänchenbrustfilets.\n\
 Verfeinern kann man die Suppe zusätzlich mit kleingeschnittener Petersilie oder Schnittlauch.",
         },
          //recipe number 11
@@ -637,15 +637,15 @@ Verfeinern kann man die Suppe zusätzlich mit kleingeschnittener Petersilie oder
             "amount": " "
          }], //end of ingredients
          "difficulty": "Zeitaufwendig",
-         "preparation": "Die Cashewkerne in zwei Längshälften teilen und in einer Pfanne ohne Fett anrösten und beiseite stellen.\
-Das gesamte Gemüse waschen und in dünne Streifen schneiden, ggf. muss dieses nochmals geteilt werden.\
-Jedoch den Brokkoli in kleine Röschen teilen.\
-Nun das Hühnerbrustfilet in mundgerechte Stücke schneiden und mit Sesamöl in einen Wok oder einer hohen Pfanne mit dem gesamten Gemüse anbraten.\
-Anschließend das Zitronengras, die Kokosmilch, 150 ml Wasser und die Gemüsepaste hinzufügen und mit den Wok-Nudeln kurz umrühren und bei geschlossenem Deckel dünsten.\
-Nach ca. 10 Minuten kann mit der Currypaste, der Sojasoße und diversen beliebigen Gewürzen abgeschmeckt werden.\
-Nach weiteren 3 - 5 Minuten können zum Schluss die gerösteten Cashewkerne hinzugefügt werden für den kleinen Crunch.\
+         "preparation": "Die Cashewkerne in zwei Längshälften teilen und in einer Pfanne ohne Fett anrösten und beiseite stellen.\n\
+Das gesamte Gemüse waschen und in dünne Streifen schneiden, ggf. muss dieses nochmals geteilt werden.\n\
+Jedoch den Brokkoli in kleine Röschen teilen.\n\
+Nun das Hühnerbrustfilet in mundgerechte Stücke schneiden und mit Sesamöl in einen Wok oder einer hohen Pfanne mit dem gesamten Gemüse anbraten.\n\
+Anschließend das Zitronengras, die Kokosmilch, 150 ml Wasser und die Gemüsepaste hinzufügen und mit den Wok-Nudeln kurz umrühren und bei geschlossenem Deckel dünsten.\n\
+Nach ca. 10 Minuten kann mit der Currypaste, der Sojasoße und diversen beliebigen Gewürzen abgeschmeckt werden.\n\
+Nach weiteren 3 - 5 Minuten können zum Schluss die gerösteten Cashewkerne hinzugefügt werden für den kleinen Crunch.\n\
 Guten Appetit!",
-         "tip": "Mit dem Gemüse kann je nach Geschmack varriert werden, die Gesamtmenge sollte lediglich bei 750 g liegen.\
+         "tip": "Mit dem Gemüse kann je nach Geschmack varriert werden, die Gesamtmenge sollte lediglich bei 750 g liegen.\n\
 Auch das Hühnerbrustfilet kann weggelassen oder durch Fisch oder Shrimps ersetzt werden.",
         },
         //recipe number 12
@@ -702,13 +702,13 @@ Auch das Hühnerbrustfilet kann weggelassen oder durch Fisch oder Shrimps ersetz
             "amount": " "
          }], //end of ingredients
          "difficulty": "Leicht",
-         "preparation": "Das TK Gemüse auftauen lassen und währenddessen den Reis schonmal nach Packungsanleitung zubereiten.\
-Die Zwiebel und die Knoblauchzehen putzen und in feinen wurfel schneiden, damit diese in etwas Öl glasig angebraten werden können.\
-Die Bananen zerdrücken und hinzugeben.\
-Nun das Currypuler mit untermischen und alles kurz anschwitzen, bevor das Gemüse hinzugefügt wird.\
-Das Ganze dann mit den Weißwein ablöschen und ca. 10 Minuten dünsten lassen, andernfalls etwas länger überziehen, falls das Gemüse noch etwas gefroren ist.\
-Nun den Joghurt mit unterrühren und alles zusammen mit Salz und Pfeffer abschmecken.\
-Zum guten Schluss nochmals alles ca. 10 Minuten köcheln lassen, bevor das Gemüse-Curry mit Reis und gehackter Petersilie serviert wird.\
+         "preparation": "Das TK Gemüse auftauen lassen und währenddessen den Reis schonmal nach Packungsanleitung zubereiten.\n\
+Die Zwiebel und die Knoblauchzehen putzen und in feinen wurfel schneiden, damit diese in etwas Öl glasig angebraten werden können.\n\
+Die Bananen zerdrücken und hinzugeben.\n\
+Nun das Currypuler mit untermischen und alles kurz anschwitzen, bevor das Gemüse hinzugefügt wird.\n\
+Das Ganze dann mit den Weißwein ablöschen und ca. 10 Minuten dünsten lassen, andernfalls etwas länger überziehen, falls das Gemüse noch etwas gefroren ist.\n\
+Nun den Joghurt mit unterrühren und alles zusammen mit Salz und Pfeffer abschmecken.\n\
+Zum guten Schluss nochmals alles ca. 10 Minuten köcheln lassen, bevor das Gemüse-Curry mit Reis und gehackter Petersilie serviert wird.\n\
 Guten Appetit!",
          "tip": "Das Gemüse ist gemischt als Tiefkühl Gemüse erhältlich und sollte mindestens 1 kg sein.",
         },
@@ -746,13 +746,13 @@ Guten Appetit!",
             "amount": " "
          }], //end of ingredients
          "difficulty": "Leicht",
-         "preparation": "Das Fischfilet in einer Küchenmaschine oder per Hand sehr klein schneiden.\
-Zusammen mit dem Ei, 2 - 3 EL Paniermehl und dem Dill zu einer festeren Masse vermengen.\
-Das Ganze mit Salz, Pfeffer und Paprikapulver würzen.\
-Nun können die Bouletten geformt und im restlichen Paniermehl gewendet werden.\
-Zum Schluss können diese dann in einer heißen Pfanne gebraten werden.\
+         "preparation": "Das Fischfilet in einer Küchenmaschine oder per Hand sehr klein schneiden.\n\
+Zusammen mit dem Ei, 2 - 3 EL Paniermehl und dem Dill zu einer festeren Masse vermengen.\n\
+Das Ganze mit Salz, Pfeffer und Paprikapulver würzen.\n\
+Nun können die Bouletten geformt und im restlichen Paniermehl gewendet werden.\n\
+Zum Schluss können diese dann in einer heißen Pfanne gebraten werden.\n\
 Guten Appetit!",
-         "tip": "Dazu passt Kartoffelpürre und eine Dillsoße am Besten.\
+         "tip": "Dazu passt Kartoffelpürre und eine Dillsoße am Besten.\n\
 Das Fischfilet kann beliebig sein (Lachs, Räucherlachs, etc.), was dem eigenen Geschmack am Besten passt.",
         },
          //recipe number 14
@@ -799,14 +799,14 @@ Das Fischfilet kann beliebig sein (Lachs, Räucherlachs, etc.), was dem eigenen 
             "amount": " "
          }], //end of ingredients
          "difficulty": "Leicht",
-         "preparation": "Das Lachfilet mit einem scharfen Messer erst halbieren und dann in Fingerbreite Streifen schneiden.\
-Die Zwiebel putzen, in feine Würfel schneiden und zusammen mit der Butter in einer Pfanne mit schwacher Hitze glasig braten.\
-Das Tomatenmark, den Weißwein und den Weinbrand hinzugeben und bei straker Hitze einkochen lassen.\
-Nun die Sahne nach und nach hineinrühren und ebenfalls etwas einkochen lassen.\
-Das Ganze kann schonmal mit Salz, Pfeffer und beliebigen Kräutern gewürzt werden.\
-Während alles köchelt, können die Nudeln ebenfalls in kochendes Salzwasser hinzugegeben werden.\
-Der Lachs sollte nun ca. 5 Minuten in die Soße eingelegt werden, allerdings sollte dieser nur Garen und nicht kochen.\
-Zum Schluss kann alles zusammen vermengt werden.\
+         "preparation": "Das Lachfilet mit einem scharfen Messer erst halbieren und dann in Fingerbreite Streifen schneiden.\n\
+Die Zwiebel putzen, in feine Würfel schneiden und zusammen mit der Butter in einer Pfanne mit schwacher Hitze glasig braten.\n\
+Das Tomatenmark, den Weißwein und den Weinbrand hinzugeben und bei straker Hitze einkochen lassen.\n\
+Nun die Sahne nach und nach hineinrühren und ebenfalls etwas einkochen lassen.\n\
+Das Ganze kann schonmal mit Salz, Pfeffer und beliebigen Kräutern gewürzt werden.\n\
+Während alles köchelt, können die Nudeln ebenfalls in kochendes Salzwasser hinzugegeben werden.\n\
+Der Lachs sollte nun ca. 5 Minuten in die Soße eingelegt werden, allerdings sollte dieser nur Garen und nicht kochen.\n\
+Zum Schluss kann alles zusammen vermengt werden.\n\
 Guten Appetit!",
          "tip": "Variieren lässt sich das Gericht auch mit Reis anstelle der Bandnudeln.",
         },
@@ -856,14 +856,14 @@ Guten Appetit!",
             "amount": " "
          }], //end of ingredients
          "difficulty": "Leicht",
-         "preparation": "Vorab den Backofen auf 150°C vorheizen.\
-Währenddessen von der Paprikk eine dünne Scheibe abschneiden, sodass diese einen 'sicheren' Stand hat.\
-Nun das obere Ende mit dem Strunk entfernen, aushöhlen, ordentlich waschen, sowie von innen salzen.\
-Die restlichen Zutaten, bis auf die Magarine, zu einer homogenen Masse vermengen und zusammen mit Salz, Pfeffer und Paprikapulver würzen.\
-Nun die Magarine in einer Pfanne erhitzen und darin die Paprika von jeder Seite anbraten.\
-Danach können diese mit der Füllmasse befüllt werden und zusammen mit dem restlichen Fett aus der Pfanne in eine Auflaufform gegeben werden.\
-Zum Schluss das Ganze nur noch für ungefähr 15 Minuten im Backofen backen.\
-Nach belieben, können die gefüllten Paprikas aus mit geriebenen Käse überstreut werden.\
+         "preparation": "Vorab den Backofen auf 150°C vorheizen.\n\
+Währenddessen von der Paprikk eine dünne Scheibe abschneiden, sodass diese einen 'sicheren' Stand hat.\n\
+Nun das obere Ende mit dem Strunk entfernen, aushöhlen, ordentlich waschen, sowie von innen salzen.\n\
+Die restlichen Zutaten, bis auf die Magarine, zu einer homogenen Masse vermengen und zusammen mit Salz, Pfeffer und Paprikapulver würzen.\n\
+Nun die Magarine in einer Pfanne erhitzen und darin die Paprika von jeder Seite anbraten.\n\
+Danach können diese mit der Füllmasse befüllt werden und zusammen mit dem restlichen Fett aus der Pfanne in eine Auflaufform gegeben werden.\n\
+Zum Schluss das Ganze nur noch für ungefähr 15 Minuten im Backofen backen.\n\
+Nach belieben, können die gefüllten Paprikas aus mit geriebenen Käse überstreut werden.\n\
 Guten Appetit!",
          "tip": "Dazu passen perfekt Kartoffeln oder Reis.",
         },
@@ -889,11 +889,11 @@ Guten Appetit!",
             "amount": "3 EL"
          }], //end of ingredients
          "difficulty": "Leicht",
-         "preparation": "Vorab den Backofen auf 170°C vorheizen.\
-Als Kräuter können Dill, Schnittlauch, Petersilie, sowie andere beliebige Kräuter verwendet werden.\
-Diese sollten gründlich gewaschen, trocken geschüttelt und klein geschnitten werden.\
-Das Fleischbrät nun mit allen Zutaten ordentlich vermengen und in eine Aluschale beziehungsweise Kastenform geben.\
-Nun das Ganze für ingesamnt 30 - 40 Minuten backen lassen.\
+         "preparation": "Vorab den Backofen auf 170°C vorheizen.\n\
+Als Kräuter können Dill, Schnittlauch, Petersilie, sowie andere beliebige Kräuter verwendet werden.\n\
+Diese sollten gründlich gewaschen, trocken geschüttelt und klein geschnitten werden.\n\
+Das Fleischbrät nun mit allen Zutaten ordentlich vermengen und in eine Aluschale beziehungsweise Kastenform geben.\n\
+Nun das Ganze für ingesamnt 30 - 40 Minuten backen lassen.\n\
 Guten Appetit!",
          "tip": "Dazu passen Bratbohnen und Bratkartoffeln perfekt.",
         },
@@ -947,15 +947,15 @@ Guten Appetit!",
             "amount": " "
          }], //end of ingredients
          "difficulty": "Zeitaufwendig",
-         "preparation": "Vorab den Backofen auf 180°C vorheizen.\
-Währenddessen die Zwiebel und die Knoblauchzehen putzen und in fein schneiden.\
-1 Esslöffel in einer Pfanne erhitzen und darin die Zwiebel und den Knoblauch anschwitzen.\
-Nun die Paprikaschote halbieren, vom Kerngehäuse befreien, waschen und in Streifen schneiden.\
-Eine Aufflaufform kann nun mit einen Esslöffel Magarine eingefettet werden.\
-Während man die Tomatenpaprika abgießt, sollte etwas Flüssigkeit aufbewahrt werden.\
-Die Flüssigkeit nun mit der Sahne und dem Ajvar zusammen verquirlen.\
-Alles zusammen, bis aus die 'Soße', miteinander in der Aufflaufform vermengen und die 'Soße' darüber gießen.\
-Zum Schluss nur noch den Käse darüber streuen und das Gesamte für ungefähr 20 Minuten backen.\
+         "preparation": "Vorab den Backofen auf 180°C vorheizen.\n\
+Währenddessen die Zwiebel und die Knoblauchzehen putzen und in fein schneiden.\n\
+1 Esslöffel in einer Pfanne erhitzen und darin die Zwiebel und den Knoblauch anschwitzen.\n\
+Nun die Paprikaschote halbieren, vom Kerngehäuse befreien, waschen und in Streifen schneiden.\n\
+Eine Aufflaufform kann nun mit einen Esslöffel Magarine eingefettet werden.\n\
+Während man die Tomatenpaprika abgießt, sollte etwas Flüssigkeit aufbewahrt werden.\n\
+Die Flüssigkeit nun mit der Sahne und dem Ajvar zusammen verquirlen.\n\
+Alles zusammen, bis aus die 'Soße', miteinander in der Aufflaufform vermengen und die 'Soße' darüber gießen.\n\
+Zum Schluss nur noch den Käse darüber streuen und das Gesamte für ungefähr 20 Minuten backen.\n\
 Guten Appetit!",
          "tip": "Dazu passen Kartoffelspalten oder Reis.",
         },
@@ -981,10 +981,10 @@ Guten Appetit!",
             "amount": " "
          }], //end of ingredients
          "difficulty": "Leicht",
-         "preparation": "Das Filet von der Silberhaut beziehungsweise Sehne und dem Fett entfernen.\
-Das Ganze nun in 2 - Finger dicke Streifen schneiden und mit der Hand flach drücken.\
-Nun mit Salz und Pfeffer würzen.\
-Die gesamten Filetscheiben nun an den Seiten mit Bacon umwickeln und in einer Pfanne mit der Magarine scharf anbraten.\
+         "preparation": "Das Filet von der Silberhaut beziehungsweise Sehne und dem Fett entfernen.\n\
+Das Ganze nun in 2 - Finger dicke Streifen schneiden und mit der Hand flach drücken.\n\
+Nun mit Salz und Pfeffer würzen.\n\
+Die gesamten Filetscheiben nun an den Seiten mit Bacon umwickeln und in einer Pfanne mit der Magarine scharf anbraten.\n\
 Guten Appetit!",
          "tip": "Die dazu servierten Beilagen können beliebig frei gewählt werden.",
         },
@@ -1058,11 +1058,11 @@ Guten Appetit!",
             "amount": " "
          }], //end of ingredients
          "difficulty": "Leicht",
-         "preparation": "Das Wasser mit etwas Salz zum kochen bringen, den Reis hinzugeben und für ca. 40 Minuten unter gelegentlichen Rühren köcheln lassen.\
-Derweil das gesamte Gemüse gut putzen und in mundgerechte Würfel schneiden.\
-Nun das Gemüse in einer Pfanne zusammen mit dem Öl scharf anbraten und zur Seite stellen.\
-Danach in der Pfanne das Hackfleisch anbraten und zusammen mit dem Zucker, Tomatenmark, den passierten Tomaten und den Gemüse Vermengen.\
-Zum Schluss nur noch den Reis mit untermengen und nach belieben mit Kräutern und Gewürzen abschmecken.\
+         "preparation": "Das Wasser mit etwas Salz zum kochen bringen, den Reis hinzugeben und für ca. 40 Minuten unter gelegentlichen Rühren köcheln lassen.\n\
+Derweil das gesamte Gemüse gut putzen und in mundgerechte Würfel schneiden.\n\
+Nun das Gemüse in einer Pfanne zusammen mit dem Öl scharf anbraten und zur Seite stellen.\n\
+Danach in der Pfanne das Hackfleisch anbraten und zusammen mit dem Zucker, Tomatenmark, den passierten Tomaten und den Gemüse Vermengen.\n\
+Zum Schluss nur noch den Reis mit untermengen und nach belieben mit Kräutern und Gewürzen abschmecken.\n\
 Guten Appetit!",
          "tip": "Die dazu servierten Beilagen können beliebig frei gewählt werden.",
         },
@@ -1108,14 +1108,14 @@ Guten Appetit!",
             "amount": " "
          }], //end of ingredients
          "difficulty": "Leicht",
-         "preparation": "Die Zwiebel putzen und zusammen mit den Speck und dem Kasslerkamm in mundgerechte Stücke schneiden.\
-In einem Topf den Speck auslassen und die Zwiebeln darin anbraten.\
-Nun kann das Sauerkraut zusammen mit etwas Wasser hinzugeben und für ca. 40 Minuten köcheln lassen.\
-Lorbeerblätter geben dem Sauerkraut noch eine würzige Note mithinzu, falls gewünscht.\
-Währenddessen die Schupfnudeln in einer Pfanne mit der Magarine bräunlich anbraten und vorerst zur Seite stellen.\
-Den Kassler ebenfalls anbraten und ebenso zur Seite stellen.\
-Danach das abgetropfte Sauerkraut in der Pfanne anbraten und mit dem Kassler und den Schupfnudeln vermengen.\
-Zum Schluss das Ganze nur noch mit Kräutern und Gewürzen nach Geschmack würzen.\
+         "preparation": "Die Zwiebel putzen und zusammen mit den Speck und dem Kasslerkamm in mundgerechte Stücke schneiden.\n\
+In einem Topf den Speck auslassen und die Zwiebeln darin anbraten.\n\
+Nun kann das Sauerkraut zusammen mit etwas Wasser hinzugeben und für ca. 40 Minuten köcheln lassen.\n\
+Lorbeerblätter geben dem Sauerkraut noch eine würzige Note mithinzu, falls gewünscht.\n\
+Währenddessen die Schupfnudeln in einer Pfanne mit der Magarine bräunlich anbraten und vorerst zur Seite stellen.\n\
+Den Kassler ebenfalls anbraten und ebenso zur Seite stellen.\n\
+Danach das abgetropfte Sauerkraut in der Pfanne anbraten und mit dem Kassler und den Schupfnudeln vermengen.\n\
+Zum Schluss das Ganze nur noch mit Kräutern und Gewürzen nach Geschmack würzen.\n\
 Guten Appetit!",
          "tip": "Die dazu servierten Beilagen können beliebig frei gewählt werden.",
         }
