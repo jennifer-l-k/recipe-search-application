@@ -17,7 +17,7 @@ class App:
         #setting title
         self.root.title("Programmiersprachen - Einführung in Python")
         #setting window size
-        width=700
+        width=900
         height=500
         screenwidth = self.root.winfo_screenwidth()
         screenheight = self.root.winfo_screenheight()
@@ -38,7 +38,7 @@ class App:
         label_banner["fg"] = "#333333"
         label_banner["justify"] = "center"
         label_banner["text"] = ""
-        label_banner.place(x=0,y=0,width=700,height=30)   
+        label_banner.place(x=0,y=0,width=900,height=30)   
 
 
         #Label for the main header
@@ -60,7 +60,7 @@ class App:
         label_author["fg"] = "#ffffff"
         label_author["justify"] = "center"
         label_author["text"] = "Erstellt von: Jennifer L. Krüger"
-        label_author.place(x=500,y=0,width=200,height=30)
+        label_author.place(x=700,y=0,width=200,height=30)
 
 
         #Entry-Widget for the Foodkeys
@@ -166,13 +166,19 @@ class App:
 
 
         #Text widget with a write proteced version to show the selected recipe
-        self.selected_recipe = tk.Text(self.root)
+        self.selected_recipe = tk.Text(self.root, wrap="word")
         ft = tkFont.Font(family='Times',size=12)
         self.selected_recipe["bg"] = "#cfcccc"
         self.selected_recipe["font"] = ft
         self.selected_recipe["fg"] = "#000000"
-        self.selected_recipe.place(x=365,y=60,width=322,height=410)
+        self.selected_recipe.place(x=365,y=60,width=522,height=410)
         self.selected_recipe.configure(state = "disabled")
+
+        scrollbar_selected_recipe = tk.Scrollbar(self.root)
+        scrollbar_selected_recipe.place(x=872,y=61,height=409)
+        scrollbar_selected_recipe.config(command = self.listbox.yview)
+
+        self.selected_recipe.config(yscrollcommand = scrollbar_selected_recipe.set)
 
 
     def button_search_command(self):
@@ -198,11 +204,11 @@ class App:
 
     def button_select_command(self):
         """..."""
-        self.selected_recipe.delete(0,'end')
         select = self.listbox.get(tk.ACTIVE)
         recipe = self.db.name_dict[select]
         
         self.selected_recipe.configure(state = "normal")
+        self.selected_recipe.delete(1.0,tk.END)
         self.selected_recipe.insert(tk.END, recipe.format_recipe())
         self.selected_recipe.configure(state = "disabled")
         print('Es wurde das ausgewählte Rezept angezeigt.')
