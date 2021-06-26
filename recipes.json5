@@ -36,7 +36,7 @@
          },
          {
             "name": "Meersalz",
-            "amount": " "
+            "amount": ""
          },
          {
             "name": "Gläser, ausgekocht",
@@ -79,7 +79,7 @@ Die benötigte Menge zum würzen von Soßen und Suppen muss ausprobiert werden, 
          },
          {
             "name": "Salz und Pfeffer",
-            "amount": " " 
+            "amount": "" 
          }], //end of ingredients
          "difficulty": "Leicht",
          "preparation": "Die Kartoffeln mit Schale waschen und ca. 20 Minuten weich kochen, dann abgießen, pellen und abkühlen lassen.\n\
@@ -131,7 +131,7 @@ Guten Appetit!",
          },
          {
             "name": "Salz und Pfeffer",
-            "amount": " "
+            "amount": ""
          }], //end of ingredients
          "difficulty": "Leicht",
          "preparation": "Als erstes sollen die Kartoffeln und das Suppengrün geputzt werden.\n\
@@ -202,7 +202,7 @@ Guten Appetit!",
          },
          {
             "name": "Salz und Pfeffer",
-            "amount": " "
+            "amount": ""
          }], //end of ingredients
          "difficulty": "Mittel",
          "preparation": "Die Gemüsesorten als erstes putzen, waschen und in feine längliche Streifen schneiden beziehungsweise mit einem Sparschäler Streifen abschneiden.\n\
@@ -296,7 +296,7 @@ Guten Appetit!",
          },
          {
             "name": "Salz und Pfeffer",
-            "amount": " "
+            "amount": ""
          }], //end of ingredients
          "difficulty": "Zeitaufwendig",
          "preparation": "Die Butter in einem Topf bräunen und den Zucker darin karamellisieren lassen.\n\
@@ -362,7 +362,7 @@ Auf den EL kommt die Füllung für eine Cannellonie und der TL schiebt den Inhal
          },
          {
             "name": "Salz und Pfeffer",
-            "amount": " "
+            "amount": ""
          }], //end of ingredients
          "difficulty": "Leicht",
          "preparation": "Die Zwiebel putzen, fein würfeln und in etwas Olivenöl anbraten.\n\
@@ -411,7 +411,7 @@ Guten Appetit!",
          },
          {
             "name": "Salz",
-            "amount": " "
+            "amount": ""
          }], //end of ingredients
          "difficulty": "Leicht",
          "preparation": "Den Spargel waschen un das untere Drittel schälen.\n\
@@ -430,7 +430,7 @@ Guten Appetit!",
          "portion": "4 Personen",
          "ingredient": [{ //begin of ingredients
              "name": "Nudeln",
-             "specification": "Tortellini",
+             "specification": "Tortellini, beliebige Füllung",
              "amount": "750 g"
          },
          {
@@ -467,7 +467,7 @@ Guten Appetit!",
          },
          {
             "name": "Salz und Pfeffer",
-            "amount": " "
+            "amount": ""
          }], //end of ingredients
          "difficulty": "Mittel",
          "preparation": "Den Brokkoli zuallererst putzen und dann in kleine Röschen teilen, sodass diese im kochenden Wasser ca. 5 - 7 Minuten bissfest gekocht werden.\n\
@@ -514,11 +514,11 @@ Guten Appetit!",
          },
          {
             "name": "Petersilie",
-            "amount": " "
+            "amount": ""
          },
          {
             "name": "Salz und Pfeffer",
-            "amount": " "
+            "amount": ""
          }], //end of ingredients
          "difficulty": "Mittel",
          "preparation": "In einen kleinen Topf ca. 250 ml Wasser zum Kochen bringen.\n\
@@ -634,7 +634,7 @@ Verfeinern kann man die Suppe zusätzlich mit kleingeschnittener Petersilie oder
          },
          {
             "name": "Salz und Pfeffer",
-            "amount": " "
+            "amount": ""
          }], //end of ingredients
          "difficulty": "Zeitaufwendig",
          "preparation": "Die Cashewkerne in zwei Längshälften teilen und in einer Pfanne ohne Fett anrösten und beiseite stellen.\n\
@@ -659,15 +659,15 @@ Auch das Hühnerbrustfilet kann weggelassen oder durch Fisch oder Shrimps ersetz
          },
          {
             "name": "Brokkoli",
-            "amount": "-" 
+            "amount": "In der Tiefkühl Mischgemüse Packung enthalten" 
          },
          {
             "name": "Blumenkohl",
-            "amount": "-"
+            "amount": "In der Tiefkühl Mischgemüse Packung enthalten"
          },
          {
             "name": "Möhren",
-            "amount": "-"
+            "amount": "In der Tiefkühl Mischgemüse Packung enthalten"
          },
          {
             "name": "Zwiebel",
@@ -699,7 +699,7 @@ Auch das Hühnerbrustfilet kann weggelassen oder durch Fisch oder Shrimps ersetz
          },
          {
             "name": "Salz und Pfeffer",
-            "amount": " "
+            "amount": ""
          }], //end of ingredients
          "difficulty": "Leicht",
          "preparation": "Das TK Gemüse auftauen lassen und währenddessen den Reis schonmal nach Packungsanleitung zubereiten.\n\
@@ -710,7 +710,7 @@ Das Ganze dann mit den Weißwein ablöschen und ca. 10 Minuten dünsten lassen, 
 Nun den Joghurt mit unterrühren und alles zusammen mit Salz und Pfeffer abschmecken.\n\
 Zum guten Schluss nochmals alles ca. 10 Minuten köcheln lassen, bevor das Gemüse-Curry mit Reis und gehackter Petersilie serviert wird.\n\
 Guten Appetit!",
-         "tip": "Das Gemüse ist gemischt als Tiefkühl Gemüse erhältlich und sollte mindestens 1 kg sein.",
+         "tip": "",
         },
          //recipe number 13
         {
@@ -735,15 +735,15 @@ Guten Appetit!",
          },
          {
             "name": "Magarine",
-            "amount": " "
+            "amount": ""
          },
          {
             "name": "Paprikapulver",
-            "amount": " "
+            "amount": ""
          },
          {
             "name": "Salz und Pfeffer",
-            "amount": " "
+            "amount": ""
          }], //end of ingredients
          "difficulty": "Leicht",
          "preparation": "Das Fischfilet in einer Küchenmaschine oder per Hand sehr klein schneiden.\n\
@@ -796,7 +796,7 @@ Das Fischfilet kann beliebig sein (Lachs, Räucherlachs, etc.), was dem eigenen 
          },
          {
             "name": "Salz und Pfeffer",
-            "amount": " "
+            "amount": ""
          }], //end of ingredients
          "difficulty": "Leicht",
          "preparation": "Das Lachfilet mit einem scharfen Messer erst halbieren und dann in Fingerbreite Streifen schneiden.\n\
@@ -849,11 +849,11 @@ Guten Appetit!",
          },
          {
             "name": "Paprikapulver",
-            "amount": " "
+            "amount": ""
          },
          {
             "name": "Salz und Pfeffer",
-            "amount": " "
+            "amount": ""
          }], //end of ingredients
          "difficulty": "Leicht",
          "preparation": "Vorab den Backofen auf 150°C vorheizen.\n\
@@ -940,11 +940,11 @@ Guten Appetit!",
          },
          {
             "name": "Paprikapulver",
-            "amount": " "
+            "amount": ""
          },
          {
             "name": "Salz und Pfeffer",
-            "amount": " "
+            "amount": ""
          }], //end of ingredients
          "difficulty": "Zeitaufwendig",
          "preparation": "Vorab den Backofen auf 180°C vorheizen.\n\
@@ -978,7 +978,7 @@ Guten Appetit!",
          },
          {
             "name": "Salz und Pfeffer",
-            "amount": " "
+            "amount": ""
          }], //end of ingredients
          "difficulty": "Leicht",
          "preparation": "Das Filet von der Silberhaut beziehungsweise Sehne und dem Fett entfernen.\n\
@@ -1043,19 +1043,19 @@ Guten Appetit!",
          },
          {
             "name": "Oregano",
-            "amount": " " 
+            "amount": "" 
          },
          {
             "name": "Chilipulver",
-            "amount": " " 
+            "amount": "" 
          },
          {
             "name": "Paprikapulver",
-            "amount": " " 
+            "amount": "" 
          },
          {
             "name": "Salz und Pfeffer",
-            "amount": " "
+            "amount": ""
          }], //end of ingredients
          "difficulty": "Leicht",
          "preparation": "Das Wasser mit etwas Salz zum kochen bringen, den Reis hinzugeben und für ca. 40 Minuten unter gelegentlichen Rühren köcheln lassen.\n\
@@ -1105,7 +1105,7 @@ Guten Appetit!",
          },
          {
             "name": "Salz und Pfeffer",
-            "amount": " "
+            "amount": ""
          }], //end of ingredients
          "difficulty": "Leicht",
          "preparation": "Die Zwiebel putzen und zusammen mit den Speck und dem Kasslerkamm in mundgerechte Stücke schneiden.\n\
