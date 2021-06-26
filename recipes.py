@@ -28,9 +28,10 @@ class Recipe:
 
     def __str__(self):
         return self.name
+        
 
     def format_recipe(self):
-        return "Rezept hier:" + self.name
+        return self.name + "\n\n\nAusreichend für: " + self.portion + "\n\nSchwierigkeit: " + self.difficulty + "\n\nZubereitung: " + self.preparation + "\n\nTipp: " + self.tip
 
 
 @dataclass
