@@ -32,6 +32,7 @@ class Recipe:
 
 
     def __str__(self):
+        """Represent recipe with name as a string."""
         return self.name
         
 
