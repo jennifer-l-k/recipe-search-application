@@ -27,6 +27,8 @@ Dem Nutzer stehen diverse Buttons zur Verfügung:
 
 - Schließen: Damit lässt sich die gesamte Applikation nach einer Sicherheitsabfrage beenden
 
+Möchte der Endnutzer ein gesamtes Rezept einsehen, so kann er innerhalb der List Box darauf klicken und auf der rechten Seite in einer Text Box erscheint dementsprechend das Rezept.
+
 ## Auflistung der Abhängigkeiten : Externe Komponenten
 - pyjson5
 
