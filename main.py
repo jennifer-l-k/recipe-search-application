@@ -5,6 +5,10 @@ import time
 import recipes
 
 class App:
+    """The "App" class includes the entire user interface with TKinter. 
+    Here are all the layouts for an easy handling for the end user and 
+    the corresponding methods for the functionality of the various buttons, 
+    input / output fields, etc.."""
     root: tk.Tk
     listbox: tk.Listbox
     entry_enterfoodkey: tk.Entry
@@ -13,6 +17,8 @@ class App:
 
 
     def __init__(self, root):
+        """This method describes and creates the entire layout of the user interface.
+        It includes all Buttons, Labels, a listbox and a text widget which is write-protected."""
         self.root = root
         self.root.configure(background='white')
         #setting title
@@ -30,7 +36,7 @@ class App:
         self.db.read_json()
         
 
-        #Label for the DHBW Logo
+        #Label for the DHBW Logocolor
         label_banner = tk.Label(self.root)
         label_banner["bg"] = "#e2001a"
         label_banner["disabledforeground"] = "#e2001a"
@@ -42,18 +48,18 @@ class App:
         label_banner.place(x=0,y=0,width=915,height=30)   
 
 
-        #Label for the main header
+        #Label for the main header within the Label for the DHBW Logocolor
         label_mainheader = tk.Label(self.root)
         ft = tkFont.Font(family='Times',size=10)
         label_mainheader["bg"] = "#e2001a"
         label_mainheader["font"] = ft
         label_mainheader["fg"] = "#ffffff"
         label_mainheader["justify"] = "center"
-        label_mainheader["text"] = "Python Laborprojekt | Rezeptauswahl"
+        label_mainheader["text"] = "Python Laborprojekt | Rezeptsuche"
         label_mainheader.place(x=0,y=0,width=250,height=30)
 
 
-        #Label with the Author within the Label for the DHBW Logo
+        #Label with the Author within the Label for the DHBW Logocolor
         label_author = tk.Label(self.root)
         ft = tkFont.Font(family='Times',size=10)
         label_author["bg"] = "#e2001a"
@@ -157,7 +163,7 @@ class App:
         button_close["command"] = self.button_close_command
 
 
-        #Text widget with a write proteced version to show the selected recipe
+        #Text widget with a scrollbar and write-proteced version to show the selected recipe
         self.selected_recipe = tk.Text(self.root, wrap="word")
         ft = tkFont.Font(family='Times',size=12)
         self.selected_recipe["bg"] = "#D3D3D3"
@@ -174,8 +180,14 @@ class App:
 
 
     def button_search_command(self):
-        """..."""
+        """This method is responsible for a recipe output within the text widget once an 
+        ingredient has been entered by the user.
+        Either the corresponding recipe is displayed or the user gets an error message.
+        When a new search query is made, the old output is deleted."""
         self.listbox.delete(0,'end')
+
+        self.selected_recipe.configure(state = "normal")
+        self.selected_recipe.delete(1.0,tk.END)        
         try:
             searched_recipes = self.db.search_recipes_by_ingredients(self.entry_enterfoodkey.get())
             for recipe in searched_recipes:
@@ -187,7 +199,9 @@ class App:
 
 
     def button_allrecipes_command(self):
-        """..."""
+        """The corresponding button allows the user to view all the 
+        recipes that are available in the database.
+        When a new search query is made, the old output is deleted."""
         self.listbox.delete(0,'end')
         self.entry_enterfoodkey.delete(0,'end')
 
@@ -199,7 +213,9 @@ class App:
 
 
     def show_selected_recipe(self, event):
-        """..."""
+        """No extra button is created to output the selected recipe. Instead, 
+        the recipe is displayed in a text widget as soon as the user clicks on 
+        a recipe in the list box."""
         select = event.widget.curselection()
         recipe = None
         if select:
@@ -218,7 +234,7 @@ class App:
 
 
     def button_close_command(self):
-        """..."""
+        """The button closes the whole application after a confirmation prompt."""
         question_box = messagebox.askquestion('Schließen der Anwendung', 'Möchten Sie die Anwendung wirklich schließen?', icon='error')
         if question_box == 'yes':
             self.root.destroy()
@@ -229,14 +245,15 @@ class App:
         
         
     def button_help_command(self):
-        """..."""
+        """The user is presented with a very brief instruction on how to use the application."""
         print('Die Hilfeseite wurde aufgerufen.')
         messagebox.showinfo('Hilfe', 'Geben Sie ein beliebiges Lebensmittel in das Suchfeld ein und es werden Ihnen entsprechende Rezepte mit dem Lebensmittel ausgegeben.\n\nViel Spaß.')
         print('Die Hilfeseite wurde geschlossen.')
 
 
     def button_reset_command(self):
-        """..."""
+        """Here the entire search query is reset. This means that the entry in the 
+        Entry Widget and the output in the List Box as well as the Text Box will be deleted."""
         self.entry_enterfoodkey.delete(0,'end')
         self.listbox.delete(0,'end')
 
@@ -246,7 +263,7 @@ class App:
 
     
     def show_all_recipes(self):
-        """..."""
+        """Here all recipe names from the database are added to the Listbox."""
         for recipe_key in self.db.all_recipes_dict:
             recipe_value = self.db.all_recipes_dict[recipe_key]
             self.listbox.insert(tk.END, recipe_value)
