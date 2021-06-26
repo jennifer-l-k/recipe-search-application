@@ -1,10 +1,10 @@
 # Recipe search application
 ## Project description
-The program should allow the user to enter a list of foods into an entry widget, that are currently in stock at home.
+The recipe search program allows the user to enter a food key in a corresponding entry widget, whereupon a list box, located on the left side, displays the matching recipes according to the recipe name.
 
-Based on this search query, the application should then output a recipe selection based on the available ingredients as a formatted list in an extra window.
+If there is no corresponding recipe for this ingredient, the end user will receive an error message.
 
-The user can then click on a recipe in this extra window, whereupon the corresponding recipe opens in a new window.
+If the end user wants to view an entire recipe, he can click on it within the list box and the recipe will appear on the right side in a text box.
 
 ## Features in scope of this project
 ### Must-haves
