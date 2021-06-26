@@ -15,7 +15,7 @@ The user can then click on a recipe in this extra window, whereupon the correspo
 * Simple GUI with Tkinter
     * Input field or entry widget for the food keys ✔️
     * Output field in an extra listbox for the listed recipe suggestions or indication that no recipe is available for it ✔️
-    * Linking within the output list to the corresponding recipe
+    * Linking within the output list to the corresponding recipe ✔️
 
 ### Nice-to-have
 * Implementation of a help button with a small introduction ✔️
@@ -23,6 +23,7 @@ The user can then click on a recipe in this extra window, whereupon the correspo
 * Bilingual program selection (German and English)
 * All recipes can be listed with the help of an extra button or with a special command in the input field ✔️
 * Implementation of a scrollbar for lists, texts, etc. that may be too long for the Layout ✔️
+* Implementation a Hamming-Distance for an extansive search query
 * Entering a list of Foodkeys
 * Food that is available in the household is displayed in green, otherwise in red
 * Sorting options by effort/difficulty, duration, meal times (breakfast, lunch or dinner) or recipe ranges (pasta-, potato-, rice- or meat dishes)
