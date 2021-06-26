@@ -32,22 +32,22 @@ class Recipe:
         
 
     def format_recipe(self):
-        list_of_ingredients = "Zutaten: \n"
+        list_of_ingredients = "Zutaten: \n\n"
 
         for ingredients_list in self.ingredients:
-            list_of_ingredients += f"\n- {ingredients_list.name}"
-            if ingredients_list.amount is not "":
-                list_of_ingredients += f"\n  {ingredients_list.amount}\n"
+            list_of_ingredients += f"- {ingredients_list.name}\n"
             if ingredients_list.specification is not "":
-                list_of_ingredients += f"\n {ingredients_list.specification}\n"
+                list_of_ingredients += f"  {ingredients_list.specification}\n"
+            if ingredients_list.amount is not "":
+                list_of_ingredients += f"  {ingredients_list.amount}\n"
+            list_of_ingredients += "\n"
 
-            
-        out = self.name +"\n\n\n"
-        out += f"Ausreichend für: {self.portion}\n"
-        out += f"\n{list_of_ingredients}\n"
-        out += f"\nSchwierigkeit: {self.difficulty}\n"
-        out += f"\nZubereitung: {self.preparation}\n"
-        out += f"\nTipp: {self.tip}"
+
+        out = f"Ausreichend für: {self.portion}\n\n"
+        out += f"{list_of_ingredients}"
+        out += f"Schwierigkeit: {self.difficulty}\n\n"
+        out += f"Zubereitung: {self.preparation}\n\n"
+        out += f"Tipp: {self.tip}"
 
         return out
 
