@@ -23,8 +23,6 @@ Dem Nutzer stehen diverse Buttons zur Verfügung:
 
 - Alle Rezepte anzeigen: Möchte der User nicht nach bestimmten Rezepten nach einer vorgegebenen Zutat gucken, so hat dieser die Möglichkeit sich alle verfügbaren Rezepte aus der Datenbank anzeigen zu lassen
 
-- Ausgewähltes Rezept anzeigen: Hat der Endnutzer ein Rezeptname gefunden, bei welchen er das dazugehörige Rezept einsehen möchte, so kann dieser Button verwendet werden. Dabei öffnet sich das gesamte Rezept in einer schreibgeschützten Text Box auf der rechten Seite der Anwendung
-
 - Hilfe: Hier bekommt der Nutzer eine kurz gehaltene Instruktion, wie die Applikation zu verwenden ist
 
 - Schließen: Damit lässt sich die gesamte Applikation nach einer Sicherheitsabfrage beenden
@@ -70,6 +68,7 @@ Hierbei wird das Rezept in
     ingredients: list[Ingredient]
 
 unterteilt.
+Zusätzlich sind hier noch Methoden enthalten, die eine entsprechende Ausgabe innerhalb des User-Interfaces ausgeben und diverse Fallunterscheidungen durchgehen bei der Zutatenliste.
 
 - RecipesDatabase
 
@@ -97,15 +96,15 @@ Dabei erfolgt auf der linken Seite eine Ausgabe der entsprechenden Rezeptliste �
 - Implementierung eines Hilfe-Buttons mit einer klein gehaltenen Instruktion
 - Implementierung eines Exit-Buttons mit einer zusätzlichen Sicherheitsabfrage
 - Ein extra Button, der alle verfügbaren Rezepte aus der Datenbank innerhalb einer List Box anzeigt
-- Implementierung einer Scrollbar bei ggf. zu langen Listen, Texten für das entsprechende Layout
+- Implementierung zweier Scrollbars bei ggf. zu langen Listen, Texten für das entsprechende Layout
 
 ### Wo liegen bekannte Beschränkungen?
 - Identische Eingabe der Zutat
 
 Damit der Endnutzer eine entsprechende Ausgabe der Rezepte nach einer Eingabe im Entry Widget erhält, muss die Schreibweise dieser Zutat identisch mit der hinterlegten Schreibweise innerhalb der Rezeptdatenbank sein. 
 
-Stimmt diese nicht überein, beispielsweise weil die Groß- und Kleinschreibung außen vor gelassen wird, Rechtschreibfehler Seitens des Endnutzers auftreten oder der User die Zutat im Singular verwendet, diese in der Datenbank allerdings im Plural hinterlegt ist, so kommt es zu einer Fehlermeldung innerhalb der Applikation.
+Stimmt diese nicht überein, beispielsweise weil Rechtschreibfehler Seitens des Endnutzers auftreten oder der User die Zutat im Singular verwendet, diese in der Datenbank allerdings im Plural hinterlegt ist, so kommt es zu einer Fehlermeldung innerhalb der Applikation.
 
 Diese bekannte Einschränkung kann mithilfe einer Implementierung der Hamming Distanz verhindert werden. Denn so können Fehlerkorrekturen innerhalb der Dateneinheit mit den gültigen Zeichen innerhalb der Datenbank verglichen werden. 
 
-Danach erfolgt die Fehlerkorrektur nach dem Wahrscheinlichkeitsprinzip. Das heißt es wird verglichen und abgewogen, welche Zeichenfolge am Wahrscheinlichsten auf die Fehlererkennung zutrifft und dementsprechend wird diese korrigiert.
+Danach erfolgt die Fehlerkorrektur nach dem Wahrscheinlichkeitsprinzip. Das heißt es wird verglichen und abgewogen, welche Zeichenfolge aus der Datenbank am Wahrscheinlichsten auf die Fehlererkennung zutrifft und dementsprechend wird diese korrigiert.
