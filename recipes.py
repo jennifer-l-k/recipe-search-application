@@ -36,16 +36,16 @@ class Recipe:
 
         for ingredients_list in self.ingredients:
             list_of_ingredients += f"\n- {ingredients_list.name}"
-            if ingredients_list.specification == "":
+            if ingredients_list.amount is not "":
                 list_of_ingredients += f"\n  {ingredients_list.amount}\n"
-            else:
-                list_of_ingredients += f"\n  {ingredients_list.specification}"
-                list_of_ingredients += f"\n  {ingredients_list.amount}\n"
+            if ingredients_list.specification is not "":
+                list_of_ingredients += f"\n {ingredients_list.specification}\n"
+
             
         out = self.name +"\n\n\n"
         out += f"Ausreichend für: {self.portion}\n"
-        out += f"\n{list_of_ingredients}"
-        out += f"Schwierigkeit: {self.difficulty}\n"
+        out += f"\n{list_of_ingredients}\n"
+        out += f"\nSchwierigkeit: {self.difficulty}\n"
         out += f"\nZubereitung: {self.preparation}\n"
         out += f"\nTipp: {self.tip}"
 
