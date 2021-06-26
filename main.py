@@ -14,10 +14,11 @@ class App:
 
     def __init__(self, root):
         self.root = root
+        self.root.configure(background='white')
         #setting title
         self.root.title("Programmiersprachen - Einführung in Python")
         #setting window size
-        width=900
+        width=915
         height=500
         screenwidth = self.root.winfo_screenwidth()
         screenheight = self.root.winfo_screenheight()
@@ -38,7 +39,7 @@ class App:
         label_banner["fg"] = "#333333"
         label_banner["justify"] = "center"
         label_banner["text"] = ""
-        label_banner.place(x=0,y=0,width=900,height=30)   
+        label_banner.place(x=0,y=0,width=915,height=30)   
 
 
         #Label for the main header
@@ -60,12 +61,12 @@ class App:
         label_author["fg"] = "#ffffff"
         label_author["justify"] = "center"
         label_author["text"] = "Erstellt von: Jennifer L. Krüger"
-        label_author.place(x=700,y=0,width=200,height=30)
+        label_author.place(x=710,y=0,width=200,height=30)
 
 
         #Entry-Widget for the Foodkeys
         self.entry_enterfoodkey = tk.Entry(self.root)
-        self.entry_enterfoodkey["bg"] = "#cfcccc"
+        self.entry_enterfoodkey["bg"] = "#D3D3D3"
         self.entry_enterfoodkey["borderwidth"] = "1px"
         self.entry_enterfoodkey["cursor"] = "arrow"
         ft = tkFont.Font(family='Times',size=12)
@@ -78,7 +79,7 @@ class App:
 
         #Button to search after recipes within the Foodkey
         button_search=tk.Button(self.root)
-        button_search["bg"] = "#cfcccc"
+        button_search["bg"] = "#D3D3D3"
         ft = tkFont.Font(family='Times',size=12)
         button_search["font"] = ft
         button_search["fg"] = "#000000"
@@ -91,58 +92,49 @@ class App:
 
         #Listbox with a scrollbar which show all the Recipes within the database
         self.listbox = tk.Listbox(self.root, selectmode = "browse")
-        self.listbox.place(x=23,y=100,width=333,height=250)
+        self.listbox["bg"] = "#D3D3D3"
+        self.listbox.place(x=23,y=100,width=333,height=290)
         ft = tkFont.Font(family='Times',size=12)
         self.listbox["font"] = ft
         
         scrollbar_listbox = tk.Scrollbar(self.root)
-        scrollbar_listbox.place(x=345,y=100,height=250)
+        scrollbar_listbox.place(x=345,y=100,height=290)
         scrollbar_listbox.config(command = self.listbox.yview)
 
         self.listbox.config(yscrollcommand = scrollbar_listbox.set)
 
+        self.listbox.bind("<<ListboxSelect>>", self.show_selected_recipe)
+        
         self.show_all_recipes()
 
 
         #Button to reset all the Foodkey within the Entry-Widget
         button_reset = tk.Button(self.root)
-        button_reset["bg"] = "#cfcccc"
+        button_reset["bg"] = "#D3D3D3"
         ft = tkFont.Font(family='Times',size=12)
         button_reset["font"] = ft
         button_reset["fg"] = "#000000"
         button_reset["justify"] = "center"
         button_reset["text"] = "Eingabe Rücksetzen"
-        button_reset.place(x=28,y=360,width=157,height=30)
+        button_reset.place(x=28,y=400,width=157,height=30)
         button_reset["command"] = self.button_reset_command
 
 
         #Button to show all the Recipes within the database
         button_allrecipes = tk.Button(self.root)
-        button_allrecipes["bg"] = "#cfcccc"
+        button_allrecipes["bg"] = "#D3D3D3"
         ft = tkFont.Font(family='Times',size=12)
         button_allrecipes["font"] = ft
         button_allrecipes["fg"] = "#000000"
         button_allrecipes["justify"] = "center"
         button_allrecipes["text"] = "Alle Rezepte anzeigen"
-        button_allrecipes.place(x=195,y=360,width=157,height=30)
+        button_allrecipes.place(x=195,y=400,width=157,height=30)
         button_allrecipes["command"] = self.button_allrecipes_command
-
-
-        #Button to show the Recipe which is selected
-        button_select = tk.Button(self.root)
-        button_select ["bg"] = "#cfcccc"
-        ft = tkFont.Font(family='Times',size=12)
-        button_select ["font"] = ft
-        button_select ["fg"] = "#000000"
-        button_select ["justify"] = "center"
-        button_select ["text"] = "Ausgewähltes Rezept anzeigen"
-        button_select .place(x=95,y=400,width=210,height=30)
-        button_select ["command"] = self.button_select_command
 
 
         #Button to show a Message for Using-Informations
         button_help = tk.Button(self.root)
-        button_help["bg"] = "#cfcccc"
+        button_help["bg"] = "#D3D3D3"
         ft = tkFont.Font(family='Times',size=12)
         button_help["font"] = ft
         button_help["fg"] = "#000000"
@@ -154,7 +146,7 @@ class App:
 
         #Button to close the Application
         button_close = tk.Button(self.root)
-        button_close["bg"] = "#cfcccc"
+        button_close["bg"] = "#D3D3D3"
         ft = tkFont.Font(family='Times',size=12)
         button_close["font"] = ft
         button_close["fg"] = "#000000"
@@ -168,14 +160,14 @@ class App:
         #Text widget with a write proteced version to show the selected recipe
         self.selected_recipe = tk.Text(self.root, wrap="word")
         ft = tkFont.Font(family='Times',size=12)
-        self.selected_recipe["bg"] = "#cfcccc"
+        self.selected_recipe["bg"] = "#D3D3D3"
         self.selected_recipe["font"] = ft
         self.selected_recipe["fg"] = "#000000"
-        self.selected_recipe.place(x=365,y=60,width=522,height=410)
+        self.selected_recipe.place(x=362,y=60,width=522,height=410)
         self.selected_recipe.configure(state = "disabled")
 
         scrollbar_selected_recipe = tk.Scrollbar(self.root)
-        scrollbar_selected_recipe.place(x=872,y=61,height=409)
+        scrollbar_selected_recipe.place(x=882,y=61,height=409)
         scrollbar_selected_recipe.config(command = self.listbox.yview)
 
         self.selected_recipe.config(yscrollcommand = scrollbar_selected_recipe.set)
@@ -198,20 +190,29 @@ class App:
         """..."""
         self.listbox.delete(0,'end')
         self.entry_enterfoodkey.delete(0,'end')
+
+        self.selected_recipe.configure(state = "normal")
+        self.selected_recipe.delete(1.0,tk.END)
+
         self.show_all_recipes()
         print('Es wurden alle Rezepte erfolgreich angezeigt.')
 
 
-    def button_select_command(self):
+    def show_selected_recipe(self, event):
         """..."""
-        select = self.listbox.get(tk.ACTIVE)
-        recipe = self.db.name_dict[select]
+        select = event.widget.curselection()
+        recipe = None
+        if select:
+         index = select[0]
+         recipe = self.db.name_dict.get(event.widget.get(index), None)
         
+        if recipe is None:
+            return        
+
         self.selected_recipe.configure(state = "normal")
         self.selected_recipe.delete(1.0,tk.END)
         self.selected_recipe.insert(tk.END, recipe.format_recipe())
         self.selected_recipe.configure(state = "disabled")
-        print('Es wurde das ausgewählte Rezept angezeigt.')
 
 
     def button_close_command(self):
@@ -236,6 +237,9 @@ class App:
         """..."""
         self.entry_enterfoodkey.delete(0,'end')
         self.listbox.delete(0,'end')
+
+        self.selected_recipe.configure(state = "normal")
+        self.selected_recipe.delete(1.0,tk.END)
         print('Die Lebensmitteleingabe wurde erfolgreich zurückgesetzt.')
 
     
