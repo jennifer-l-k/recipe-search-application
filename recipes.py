@@ -8,7 +8,9 @@ with open('./recipes.json5', encoding='utf-8') as file:
 
 @dataclass  #Methode __init__() zur Erzeugung von Objekten wird eingespart
 class Ingredient:  #Aufteilung der Zutaten
-    """More precise breakdown of the individual ingredient structures."""
+    """The "Ingredient" class describes a more detailed breakdown 
+    of the individual ingredient structures. 
+    Here, each individual ingredient is fractionated down to "Name", "Specification" and "Amount"."""
     name: str
     specification: str
     amount: str
@@ -16,7 +18,9 @@ class Ingredient:  #Aufteilung der Zutaten
 
 @dataclass
 class Recipe:
-    """Container class or template for the entire recipe structure."""
+    """The container class "Recipe" represents a template for the entire recipe structure.
+    In addition, methods are included here, which output a corresponding output 
+    within the user interface and go through various case distinctions for the ingredient list."""
     id: int
     name: str
     portion: str
@@ -32,6 +36,8 @@ class Recipe:
         
 
     def format_recipe(self):
+        """This specifies a corresponding arrangement 
+        of the output of the selected recipe in the text widget."""
         list_of_ingredients = "Zutaten: \n\n"
 
         for ingredients_list in self.ingredients:
@@ -54,8 +60,8 @@ class Recipe:
 
 @dataclass
 class RecipesDatabase:
-    """Reading in the recipe database with processing of the data in various functions.
-    These are divided into the methods "read_json" and "search_recipes_by_ingredients."""
+    """The "RecipesDatabase" class reads the corresponding recipe data from the 
+    json5 file so that it can be processed in the methods and dictonaries associated with this class."""
     all_recipes_dict: dict = dataclasses.field(
         default_factory = dict)
     name_dict: dict = dataclasses.field(
@@ -66,7 +72,7 @@ class RecipesDatabase:
 
     def read_json(self):
         """Read in the recipes from the database "recipes.json5". 
-        The corresponding data is then assigned to Dictonarsys."""
+        The corresponding data is then assigned to Dictonaries."""
         for recipe in data["recipes"]:
             new_recipe = Recipe(id=recipe["id"],
                                 name=recipe["name"],
