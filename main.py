@@ -211,6 +211,8 @@ class App:
 
         self.selected_recipe.configure(state = "normal")
         self.selected_recipe.delete(1.0,tk.END)
+        self.selected_recipe.tag_configure('highlightLine', font='Bold', relief='raised')
+        self.selected_recipe.insert(tk.END, recipe.name + "\n\n\n", ('highlightLine'))
         self.selected_recipe.insert(tk.END, recipe.format_recipe())
         self.selected_recipe.configure(state = "disabled")
 
