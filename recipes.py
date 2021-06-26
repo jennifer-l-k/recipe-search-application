@@ -26,6 +26,7 @@ class Recipe:
     ingredients: list[Ingredient] = dataclasses.field(
         default_factory=list)
 
+
     def __str__(self):
         return self.name
         
@@ -41,17 +42,14 @@ class Recipe:
                 list_of_ingredients += f"\n  {ingredients_list.specification}"
                 list_of_ingredients += f"\n  {ingredients_list.amount}\n"
             
-
         out = self.name +"\n\n\n"
         out += f"Ausreichend für: {self.portion}\n"
         out += f"\n{list_of_ingredients}"
         out += f"Schwierigkeit: {self.difficulty}\n"
         out += f"\nZubereitung: {self.preparation}\n"
         out += f"\nTipp: {self.tip}"
-        
-        
+
         return out
-        #return self.name + "\n\n\nAusreichend für: " + self.portion + "\n\nSchwierigkeit: " + self.difficulty + "\n\nZubereitung: " + self.preparation + "\n\nTipp: " + self.tip
 
 
 @dataclass
@@ -90,6 +88,7 @@ class RecipesDatabase:
                 self.ingredient_dict[new_ingredient.name.casefold()] = current_recipes
             self.all_recipes_dict[new_recipe.id] = new_recipe  #Dictonary after ID
             self.name_dict[new_recipe.name] = new_recipe #Dictionary after name, because of the Listbox Widget
+
 
     def search_recipes_by_ingredients(self,ingredient):
         """Search function for a food key within the recipe database."""
