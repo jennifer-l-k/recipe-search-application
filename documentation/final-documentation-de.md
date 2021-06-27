@@ -41,6 +41,10 @@ Hier wurde auf die Version pyjson5 zurückgegriffen, da hierbei die Möglichkeit
 TKinter wurde für die Erstellung eines einfachen User-Interfaces genutzt.
 Da TKinter teil der Python Standardinstallation ist, ist dementsprechend auch die gesamte Anwendung Cross-Platform, das heißt unter Linux, macOS und Microsoft Windows, kompatibel.
 
+- Levenshtein
+
+Für eine verbesserte Suchabfrage wurde die externe Komponente einer Levenshtein Distanz mit einbezogen. So bekommt der User selbst dann Rezepte zur Suchabfrage vorgeschlagen, wenn diese nicht ganz der Schreibweise der Datenbank recipes.json5 entspricht.
+
 ## Kurzbeschreibung der Architektur und Struktur
 ### Module
 - recipes.py
@@ -74,7 +78,7 @@ Zusätzlich sind hier noch Methoden enthalten, die eine entsprechende Ausgabe in
 
 - RecipesDatabase
 
-Die Klasse "RecipesDatabase" liest aus der json5-Datei die entsprechenden Rezeptdaten aus, sodass diese in den zur Klasse dazugehörigen Methoden und Dictonaries verarbeitet werden können.
+Die Klasse "RecipesDatabase" liest aus der json5-Datei die entsprechenden Rezeptdaten aus, sodass diese in den zur Klasse dazugehörigen Methoden und Datenstrukturen verarbeitet werden können.
 
 - App
 
@@ -99,14 +103,14 @@ Dabei erfolgt auf der linken Seite eine Ausgabe der entsprechenden Rezeptliste �
 - Implementierung eines Exit-Buttons mit einer zusätzlichen Sicherheitsabfrage
 - Ein extra Button, der alle verfügbaren Rezepte aus der Datenbank innerhalb einer List Box anzeigt
 - Implementierung zweier Scrollbars bei ggf. zu langen Listen, Texten für das entsprechende Layout
+- Implementierung einer Levenshtein-Distanz für eine verbesserte Suchabfrage
 
 ### Wo liegen bekannte Beschränkungen?
-- Identische Eingabe der Zutat
+- Verbesserte Suchabfrage
 
-Damit der Endnutzer eine entsprechende Ausgabe der Rezepte nach einer Eingabe im Entry Widget erhält, muss die Schreibweise dieser Zutat identisch mit der hinterlegten Schreibweise innerhalb der Rezeptdatenbank sein. 
+Die Suchabfrage mit Hilfe der Levenshtein-Distanz könnte weiter verbessert werden, mit beispielsweiser einer Impelentierung von N-Gramme (Häufigkeitsanalyse).
 
-Stimmt diese nicht überein, beispielsweise weil Rechtschreibfehler Seitens des Endnutzers auftreten oder der User die Zutat im Singular verwendet, diese in der Datenbank allerdings im Plural hinterlegt ist, so kommt es zu einer Fehlermeldung innerhalb der Applikation.
+- Eingabe einer Liste als Suchabfrage
 
-Diese bekannte Einschränkung kann mithilfe einer Implementierung der Hamming Distanz verhindert werden. Denn so können Fehlerkorrekturen innerhalb der Dateneinheit mit den gültigen Zeichen innerhalb der Datenbank verglichen werden. 
-
-Danach erfolgt die Fehlerkorrektur nach dem Wahrscheinlichkeitsprinzip. Das heißt es wird verglichen und abgewogen, welche Zeichenfolge aus der Datenbank am Wahrscheinlichsten auf die Fehlererkennung zutrifft und dementsprechend wird diese korrigiert.
+Hier kann die Eingabe in mehreren Entry Widgets erfolgen oder in einem zusammengefasst werden, bei welchen die Zutaten durch ein ','  getrennt werden.
+In beiden Fällen müsste für jede identifizierte Zutat die Suchfunktion neu durchlaufen werden.
