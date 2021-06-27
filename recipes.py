@@ -1,6 +1,8 @@
-import pyjson5 as json
 from dataclasses import dataclass
 import dataclasses
+
+import pyjson5 as json
+import Levenshtein
 
 with open('./recipes.json5', encoding='utf-8') as file:
     data = json.load(file)
@@ -43,9 +45,9 @@ class Recipe:
 
         for ingredients_list in self.ingredients:
             list_of_ingredients += f"- {ingredients_list.name}\n"
-            if ingredients_list.specification is not "":
+            if ingredients_list.specification != "":
                 list_of_ingredients += f"  {ingredients_list.specification}\n"
-            if ingredients_list.amount is not "":
+            if ingredients_list.amount != "":
                 list_of_ingredients += f"  {ingredients_list.amount}\n"
             list_of_ingredients += "\n"
 
@@ -103,4 +105,32 @@ class RecipesDatabase:
         tmp = self.ingredient_dict[ingredient.casefold()]
         for recipe_id in tmp:
             recipes.append(self.all_recipes_dict[recipe_id])
+        return recipes
+
+    def fuzzy_search_recipes_by_ingredients(self, ingredient):
+        """Ingredient search with Levenshtein distance."""
+        cutoff = 3
+        max_matches = 3
+        
+        # Fuzzy match ingredient name first
+        matches = []
+
+        for key in self.ingredient_dict:
+            dist = Levenshtein.distance(key, ingredient)
+            if dist < cutoff:
+             matches.append((key, dist))
+
+        if len(matches) == 0:
+            return []
+
+        # Sort matches, fetch and return recipes for matched ingredients
+        sorted_matches = sorted(matches, key=lambda tup: tup[1])
+        max_index = min(max_matches, len(sorted_matches))
+        print(sorted_matches)
+        recipes = []
+        for i in range(max_index):
+            for recipe in self.search_recipes_by_ingredients(sorted_matches[i][0]):
+                    if recipe not in recipes:
+                        recipes.append(recipe)
+
         return recipes
