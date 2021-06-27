@@ -188,14 +188,14 @@ class App:
 
         self.selected_recipe.configure(state = "normal")
         self.selected_recipe.delete(1.0,tk.END)        
-        try:
-            searched_recipes = self.db.search_recipes_by_ingredients(self.entry_enterfoodkey.get())
+        searched_recipes = self.db.fuzzy_search_recipes_by_ingredients(self.entry_enterfoodkey.get())
+        if len(searched_recipes) == 0:
+            self.listbox.insert(0,'Keine Rezepte für die Suchabfrage verfügbar.')
+            print('Keine Ergebnisse für die Suchanfrage.')
+        else:
             for recipe in searched_recipes:
                 self.listbox.insert(tk.END, recipe)
             print('Es wurden Rezepte für den Suchbegriff gefunden.')
-        except:
-            self.listbox.insert(0,'Keine Rezepte für die Suchabfrage verfügbar.')
-            print('Suchanfrage fehlgeschlagen')
 
 
     def button_allrecipes_command(self):
