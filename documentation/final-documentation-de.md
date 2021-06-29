@@ -113,4 +113,4 @@ Die Suchabfrage mit Hilfe der Levenshtein-Distanz könnte weiter verbessert werd
 - Eingabe einer Liste als Suchabfrage
 
 Hier kann die Eingabe in mehreren Entry Widgets erfolgen oder in einem zusammengefasst werden, bei welchen die Zutaten durch ein ','  getrennt werden.
-In beiden Fällen müsste für jede identifizierte Zutat die Suchfunktion neu durchlaufen werden.
+In beiden Fällen müsste für jede identifizierte Zutat die Suchfunktion neu durchgelaufen werden.
